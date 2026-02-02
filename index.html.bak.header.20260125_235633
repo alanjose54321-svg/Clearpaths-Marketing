@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clearpaths Marketing — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" class="site-logo" alt="Clearpaths Marketing">
+        <span class="logo-text">CLEARPATHS MARKETING</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="btn btn-primary" href="contact.html">Start a Project</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.40)), url('img/about.jpg');">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>We build ethical, measurable face‑to‑face fundraising that scales</h1>
+          <p class="lead">Clearpaths delivers trained field teams, compliant operations and clear reporting so mission-driven organisations reach more supporters and raise predictable revenue.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+            <a class="btn btn-ghost" href="services.html">Explore Services</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="img/about.jpg" alt="Team meeting" style="max-width:420px;border-radius:8px;box-shadow:0 8px 24px rgba(11,90,166,0.06)">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--teal">
+      <h2>Our approach</h2>
+      <p class="muted">We combine people, process and data to run responsible outreach programmes that produce measurable outcomes.</p>
+
+      <div class="grid grid-3" style="margin-top:20px">
+        <div class="card">
+          <h4>Design</h4>
+          <p>We translate your objectives into testable outreach plays — audience segments, scripts and KPIs.</p>
+        </div>
+        <div class="card">
+          <h4>Train</h4>
+          <p>All ambassadors complete structured training and compliance checks before field deployment.</p>
+        </div>
+        <div class="card">
+          <h4>Deploy & Measure</h4>
+          <p>We run pilots, optimise based on live data, and provide transparent reporting for each campaign.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>CLEARPATHS MARKETING</strong><br>
+        705‑888‑2065 — marketingclearpaths@gmail.com
+      </div>
+      <div>© <span id="year"></span> Clearpaths Marketing</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clearpaths Marketing — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">CLEARPATHS MARKETING</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="contact.html">Start a Project</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.40)), url('img/about.jpg');">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Turn Your Mission Into Measurable Support</h1>
+          <p class="lead">We design and run face-to-face outreach and community activations that increase awareness, engagement and long‑term support for charities and healthcare partners across the GTA.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+            <a class="btn btn-ghost" href="services.html">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="img/about.jpg" alt="Team meeting" style="max-width:420px;border-radius:8px;box-shadow:0 8px 24px rgba(11,90,166,0.06)">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--teal">
+      <h2>Partnering to Amplify Impact</h2>
+      <p class="muted">Clearpaths Marketing combines trained field teams, strong operations and clear reporting to help mission-driven organisations reach more people and raise more funds.</p>
+      <p><a class="btn btn-primary" href="contact.html">Tell Us About Your Campaign</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>CLEARPATHS MARKETING</strong><br>
+        110 Matheson Blvd W, Mississauga, ON L5R 4G7<br>
+        705‑888‑2065 — marketingclearpaths@gmail.com
+      </div>
+      <div>© <span id="year"></span> Clearpaths Marketing</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

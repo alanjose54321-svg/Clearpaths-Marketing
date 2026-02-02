@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Clearpaths Marketing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="services-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" class="site-logo" alt="Clearpaths Marketing">
+        <span class="logo-text">CLEARPATHS MARKETING</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="contact.html">Start a Project</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.6)), url('img/sample4.jpg');">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Services that move the needle</h1>
+          <p class="lead">Strategy, field outreach, training and operations — built to create measurable donor outcomes.</p>
+        </div>
+        <div class="hero-image">
+          <img src="img/sample4.jpg" alt="Services team" style="max-width:420px;border-radius:8px;box-shadow:0 8px 24px rgba(11,90,166,0.06)">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--teal">
+      <div class="grid grid-3">
+        <div class="card"><h4>Fundraising Strategy</h4><p>Audience, messaging & KPI design.</p></div>
+        <div class="card"><h4>Field Outreach</h4><p>Skilled ambassadors for events and public outreach.</p></div>
+        <div class="card"><h4>Training & QA</h4><p>Onboarding, coaching and quality audits.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>CLEARPATHS MARKETING</strong><br>
+        705‑888‑2065 — marketingclearpaths@gmail.com
+      </div>
+      <div>© <span id="year"></span> Clearpaths Marketing</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

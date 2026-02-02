@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Testimonials — Clearpaths Marketing</title>
+  <meta name="description" content="What clients say about Clearpaths Marketing's door-to-door campaigns." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a><span class="brand-name">Clearpaths Marketing</span></div>
+      <nav class="main-nav"><a href="contact.html" class="btn small">Get a Proposal</a></nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="page-hero">
+      <h1>Client testimonials</h1>
+      <p class="lead">Feedback from partner organisations we've supported.</p>
+    </section>
+
+    <section class="content testimonials-list">
+      <div class="testimonial">
+        <p>"Clearpaths made a complicated campaign feel simple. We saw steady monthly donors and clean data handover."</p>
+        <strong>— Laura R., Local Animal Rescue</strong>
+      </div>
+
+      <div class="testimonial">
+        <p>"Their field teams were professional and adaptable — the reporting helped our team plan follow-up outreach."</p>
+        <strong>— Omar N., Youth Outreach</strong>
+      </div>
+
+      <div class="testimonial">
+        <p>"Trained canvassers who respect privacy and represent our charity well. Would run another campaign with them."</p>
+        <strong>— Priya S., Community Health Charity</strong>
+      </div>
+
+      <div class="center">
+        <a href="contact.html" class="btn primary">Start your campaign</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><div><strong>Clearpaths Marketing</strong></div></div>
+  </footer>
+</body>
+</html>
+
+

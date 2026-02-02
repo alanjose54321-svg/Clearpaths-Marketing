@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Training & Compliance — Clearpaths Marketing</title>
+  <meta name="description" content="Training programs, safeguarding, and quality assurance for canvassers to ensure compliant and effective field work." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a><span class="brand-name">Clearpaths Marketing</span></div>
+      <nav class="main-nav"><a href="contact.html" class="btn small">Get a Proposal</a></nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="page-hero">
+      <h1>Training, Compliance & Quality Assurance</h1>
+      <p class="lead">We train canvassers on messaging, safeguarding and privacy so every interaction protects your reputation and the rights of individuals.</p>
+    </section>
+
+    <section class="content">
+      <h2>Training highlights</h2>
+      <ul>
+        <li>Role-play and objection handling</li>
+        <li>Privacy & consent procedures (PIPEDA-ready)</li>
+        <li>Safeguarding and vulnerable-person awareness</li>
+        <li>Data capture accuracy and secure handover</li>
+      </ul>
+
+      <h2>Quality controls</h2>
+      <p>Supervisors run daily checks, record samples for review and provide coaching, ensuring consistent performance across teams and territories.</p>
+
+      <div class="center">
+        <a href="contact.html" class="btn primary">Arrange training</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><div><strong>Clearpaths Marketing</strong></div></div>
+  </footer>
+</body>
+</html>
+
+

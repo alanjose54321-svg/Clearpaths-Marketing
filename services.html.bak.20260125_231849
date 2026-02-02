@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Clearpaths Marketing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">CLEARPATHS MARKETING</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="contact.html">Start a Project</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section section--teal">
+      <h2>Services That Deliver Results</h2>
+      <p class="muted">Practical, measurable services built for charities and healthcare organisations.</p>
+
+      <div class="grid grid-3" style="margin-top:20px">
+        <div class="card">
+          <h4>Fundraising Strategy</h4>
+          <p>Data-led campaign design that increases donor conversion and lifetime value.</p>
+        </div>
+
+        <div class="card">
+          <h4>Donor Engagement</h4>
+          <p>Face-to-face conversations and follow-up systems that build long-term supporter relationships.</p>
+        </div>
+
+        <div class="card">
+          <h4>Campaign Operations</h4>
+          <p>Full campaign management: recruitment, training, routing and reporting for consistent performance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>CLEARPATHS MARKETING</strong><br>
+        110 Matheson Blvd W, Mississauga, ON L5R 4G7<br>
+        705‑888‑2065 — marketingclearpaths@gmail.com
+      </div>
+      <div>© <span id="year"></span> Clearpaths Marketing</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

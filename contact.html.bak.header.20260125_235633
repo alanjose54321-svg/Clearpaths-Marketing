@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Clearpaths Marketing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" class="site-logo" alt="Clearpaths Marketing">
+        <span class="logo-text">CLEARPATHS MARKETING</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="btn btn-primary" href="contact.html">Start a Project</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="contact" class="section section--coral">
+      <h2>Contact Us</h2>
+      <p>Tell us about your goals and we'll suggest a short pilot to test fit and performance.</p>
+
+      <div class="grid grid-2" style="gap:28px;align-items:start">
+        <div>
+          <ul class="contact-info">
+            <li><strong>Phone:</strong> 705‑888‑2065</li>
+            <li><strong>Email:</strong> marketingclearpaths@gmail.com</li>
+            <li><strong>Address:</strong> Provided on request</li>
+            <li><strong>Field shift hours:</strong> 12:30 PM – 8:30 PM</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Get in touch</h3>
+          <p class="muted">Short enquiry — we typically reply within one business day.</p>
+
+          <form class="contact-form" action="#" method="post" aria-label="Contact form">
+            <input type="text" name="name" placeholder="Your first name" required>
+            <input type="email" name="email" placeholder="Your email address" required>
+            <textarea name="message" placeholder="Your message" rows="4"></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>CLEARPATHS MARKETING</strong><br>
+        705‑888‑2065 — marketingclearpaths@gmail.com
+      </div>
+      <div>© <span id="year"></span> Clearpaths Marketing</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

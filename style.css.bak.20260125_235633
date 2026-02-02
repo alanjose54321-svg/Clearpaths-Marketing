@@ -1,0 +1,135 @@
+﻿:root{
+  --bg: #f7fbfa;
+  --primary: #0A7A57;
+  --accent: #FF7A50;
+  --surface: #ffffff;
+  --muted: #4f6460;
+  --text: #042a28;
+  --container: 1100px;
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(11,90,166,0.06);
+  --heading: "Poppins", sans-serif;
+  --body: "Roboto", sans-serif;
+}
+
+/* Core reset & base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--body);
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.55;
+  position:relative;
+}
+
+/* watermark */
+body::before{
+  content: "";
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 220px;
+  height: 220px;
+  background: url('img/logo.svg') no-repeat center/contain;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* container above watermark */
+.container{max-width:var(--container);margin:0 auto;padding:0 18px;position:relative;z-index:1}
+
+/* header & logo */
+.site-header{position:sticky;top:0;background:rgba(255,255,255,0.96);backdrop-filter:blur(6px);padding:12px 0;z-index:40;border-bottom:1px solid rgba(7,40,42,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none}
+.site-logo{width:44px;height:44px;display:block;flex:0 0 44px}
+.logo-text{font-family:var(--heading);font-weight:700;color:var(--text);font-size:16px;letter-spacing:0.6px}
+
+/* nav & buttons */
+.main-nav a{margin-right:18px;color:var(--muted);text-decoration:none;font-weight:600}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;cursor:pointer;border:0;font-weight:600}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:var(--shadow)}
+.btn-ghost{background:transparent;border:1px solid rgba(10,122,87,0.10);color:var(--primary)}
+
+/* hero common */
+.hero{padding:56px 0;background-size:cover;background-position:center;color:var(--text);border-radius:10px;margin:18px 0}
+.hero-inner{display:flex;align-items:center;gap:32px}
+.hero-copy{flex:1;max-width:680px}
+.hero h1{font-family:var(--heading);font-size:40px;margin:0 0 12px;color:var(--text);line-height:1.08}
+.lead{color:var(--text);font-size:18px;margin-bottom:18px}
+
+/* section variants */
+.section{padding:36px 0}
+.section--teal{ background: #E9F7F2; padding:36px 0 }
+.section--coral{ background: #FFF3F0; padding:36px 0 }
+.section--neutral{ background: transparent; padding:36px 0 }
+
+/* grid / cards */
+.grid{display:grid;gap:20px}
+.grid-2{grid-template-columns:1fr 1fr;align-items:center}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:920px){
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  .hero-inner{flex-direction:column-reverse}
+  .main-nav{display:none}
+}
+.card{background:var(--surface);padding:18px;border-radius:10px;box-shadow:var(--shadow)}
+.card h4{margin-top:0;color:var(--text)}
+.card p{color:var(--muted)}
+.card-img{width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:12px;display:block;background:#f2f6f4}
+.media{width:100%;max-width:520px;max-height:300px;height:auto;border-radius:8px;display:block;background:#f2f6f4;box-shadow:var(--shadow);object-fit:cover}
+
+/* careers image */
+.careers-image { width:100%; max-width:520px; height:auto; border-radius:8px; box-shadow:var(--shadow); display:block; }
+
+/* footer */
+.site-footer{background:transparent;padding:18px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px;flex-wrap:wrap;gap:12px}
+.center{text-align:center}
+
+/* -----------------------------------------------------------
+   Page-specific styles (different look per page)
+   Each page should include <body class="..."> so these apply
+   -----------------------------------------------------------*/
+
+/* HOME (light, airy) */
+body.home-page {
+  background: linear-gradient(180deg, #f7fbfb 0%, #f0fbf7 100%);
+}
+body.home-page .hero {
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.84), rgba(255,255,255,0.48)), url('img/about.jpg');
+  box-shadow: 0 8px 40px rgba(3,20,18,0.04);
+}
+body.home-page .section--teal { background: linear-gradient(180deg,#E9F7F2 0%, #f5fbf9 100%); }
+body.home-page .card { border-top: 4px solid rgba(10,122,87,0.06); }
+
+/* ABOUT (warm, human) */
+body.about-page { background: linear-gradient(180deg,#fffaf6 0%, #fff6f0 100%); }
+body.about-page .hero { background-image: linear-gradient(180deg, rgba(255,255,255,0.78), rgba(255,250,245,0.60)), url('img/canvasser2.jpg'); color: var(--text); }
+body.about-page .section--coral { background: linear-gradient(180deg,#fff5f0 0%, #fff8f6 100%); }
+body.about-page .card { background: linear-gradient(180deg,#ffffff,#fffafa); border-left:4px solid rgba(255,122,80,0.06) }
+
+/* SERVICES (professional blue palette) */
+body.services-page { background: linear-gradient(180deg,#f3f7fb 0%, #eef6fb 100%); }
+body.services-page .hero { background-image: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.5)), url('img/sample4.jpg'); }
+body.services-page .card { border-top:4px solid rgba(7,90,150,0.06); }
+
+/* CAREERS (bold, energetic) */
+body.careers-page { background: linear-gradient(180deg,#f6fbf8 0%, #f3faf7 100%); }
+body.careers-page .hero { background-image: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.45)), url('img/event.jpg'); }
+body.careers-page .section--teal { background: linear-gradient(180deg,#E9F7F2 0%, #f3fbf9 100%); }
+body.careers-page .card { border-left:4px solid rgba(10,122,87,0.06); }
+
+/* CONTACT (contrasting, trust-build) */
+body.contact-page { background: linear-gradient(180deg,#eefaf8 0%, #e9f7f3 100%); }
+body.contact-page .hero { background-image: linear-gradient(180deg, rgba(235,250,248,0.9), rgba(235,250,248,0.6)), url('img/contact-office.jpg'); }
+body.contact-page .section--coral { background: linear-gradient(180deg,#fffaf8, #fff8f6); }
+body.contact-page .card { border-top:4px solid rgba(10,122,87,0.04) }
+
+/* Subtle decorative separators for section headings */
+.section h2 { position:relative; padding-bottom:8px; margin-bottom:12px; }
+.section h2::after { content:""; display:block; width:48px; height:4px; background:var(--primary); border-radius:4px; margin-top:8px; opacity:0.12; }

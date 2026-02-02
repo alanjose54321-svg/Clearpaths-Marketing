@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — Clearpaths Marketing</title>
+  <meta name="description" content="Frequently asked questions about door-to-door fundraising, compliance, pricing and campaign logistics." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><nav class="nav"><div class="brand"><a href="index.html"><img src="img/logo.png" alt="Clearpaths Marketing" class="logo"></a><span>Clearpaths Marketing</span></div></nav></header>
+
+  <main class="page">
+    <section class="page-hero"><h1>FAQ</h1><p class="lead">Answers to common questions about field campaigns and how we work.</p></section>
+
+    <section class="content">
+      <h3>What is the typical cost of a campaign?</h3>
+      <p>Costs depend on territory size, campaign length and target outcomes. We provide fixed proposals or CPA models—contact us for a custom estimate.</p>
+
+      <h3>How do you recruit and train canvassers?</h3>
+      <p>We recruit locally and provide scenario-based training, role-play, compliance, privacy and messaging rehearsals. Supervisors monitor field quality and coach teams.</p>
+
+      <h3>Is door-to-door fundraising compliant with privacy rules?</h3>
+      <p>Yes—our processes respect local privacy laws (PIPEDA or regional equivalents). We obtain explicit consent for personal data and provide secure export/handover formats.</p>
+
+      <h3>What metrics will I receive?</h3>
+      <p>We deliver daily field tallies, conversion rates, CPA, donor averages and a post-campaign summary with recommendations and raw supporter exports for CRM import.</p>
+
+      <h3>Can you run campaigns outside my city?</h3>
+      <p>Yes — we operate regionally and can scale teams to multiple locations. Logistics and pricing vary with distance and local labour availability.</p>
+
+      <div class="center">
+        <a class="btn" href="contact.html">Ask a question</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><div><strong>Clearpaths Marketing</strong></div></div></footer>
+</body>
+</html>
+
+

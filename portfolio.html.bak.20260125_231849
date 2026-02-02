@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Work — Clearpaths Marketing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <span>Clearpaths Marketing</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <h1>Selected Projects</h1>
+      <p>Case snapshots of client work.</p>
+    </section>
+
+    <section class="gallery">
+      <div class="project">
+        <img src="img/sample1.jpg" alt="">
+        <h4>Doorstep Outreachs — Growth</h4>
+        <p>Local SEO & social → more bookings.</p>
+      </div>
+
+      <div class="project">
+        <img src="img/sample2.jpg" alt="">
+        <h4>Campaign Operations — Rebrand</h4>
+        <p>Identity & messaging.</p>
+      </div>
+    </section>
+
+    <div class="center">
+      <a class="btn" href="contact.html">Discuss Your Project</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner"><div><strong>Clearpaths Marketing</strong></div></div>
+    <div class="center"><small>&copy; 2026 Clearpaths Marketing</small></div>
+  </footer>
+</body>
+</html>
+
+

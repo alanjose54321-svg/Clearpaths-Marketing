@@ -1,0 +1,360 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clearpaths Marketing â€” Community-first Fundraising</title>
+
+  <!-- Fonts: Poppins (headings) + Roboto (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Clearpaths Marketing â€” face-to-face outreach, brand ambassador programs and campaign services for humanitarian and medical organisations in the GTA.">
+
+  <style>
+  :root{
+    --bg: #F0FAF7;
+    --primary: #0B8F6B;   /* teal */
+    --accent:  #FF8A65;   /* coral */
+    --surface: #ffffff;
+    --muted: #55636b;
+    --text: #0f1724;
+    --container: 1100px;
+    --radius: 12px;
+    --shadow: 0 8px 24px rgba(11,90,166,0.06);
+    --heading: "Poppins", sans-serif;
+    --body: "Roboto", sans-serif;
+  }
+
+  /* Reset & base */
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:var(--body);
+    color:var(--text);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+    -moz-osx-font-smoothing:grayscale;
+  }
+
+  .container{max-width:var(--container);margin:0 auto;padding:0 18px}
+
+  /* Header */
+  .site-header{position:sticky;top:0;background:transparent;padding:14px 0;z-index:40}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .logo{font-family:var(--heading);font-weight:700;color:var(--text);text-decoration:none;font-size:18px}
+  .main-nav a{margin-right:18px;color:var(--muted);text-decoration:none;font-weight:600}
+  .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;cursor:pointer;border:0;font-weight:600}
+  .btn-primary{background:var(--primary);color:#fff;box-shadow:var(--shadow)}
+  .btn-ghost{background:transparent;border:1px solid rgba(11,143,107,0.10);color:var(--accent)}
+
+  /* Hero */
+  .hero{padding:44px 0 28px}
+  .hero-inner{display:flex;align-items:center;gap:36px}
+  .hero-copy{flex:1;max-width:640px}
+  .hero h1{font-family:var(--heading);font-size:34px;margin:0 0 12px;color:var(--text)}
+  .lead{color:var(--muted);font-size:17px;margin-bottom:18px}
+  .hero-cta .btn{margin-right:12px}
+  .rating{margin-top:10px;color:var(--accent);font-weight:700}
+
+  .hero-image{flex:1;display:flex;justify-content:center}
+  .hero-svg{width:100%;max-width:760px;max-height:420px;border-radius:12px;box-shadow:var(--shadow);background:linear-gradient(180deg,#ffffff 0%, #f7fff6 100%);display:flex;align-items:center;justify-content:center;padding:20px}
+
+  /* Section variants */
+  .section{padding:36px 0}
+  .section--teal{ background: #E9F7F2; padding:36px 0 }
+  .section--coral{ background: #FFF3F0; padding:36px 0 }
+  .section--neutral{ background: transparent; padding:36px 0 }
+
+  /* Grid helpers */
+  .grid{display:grid;gap:20px}
+  .grid-2{grid-template-columns:1fr 1fr;align-items:center}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  @media (max-width:920px){
+    .grid-2,.grid-3{grid-template-columns:1fr}
+    .hero-inner{flex-direction:column-reverse}
+    .main-nav{display:none}
+  }
+
+  /* Cards & images */
+  .card{background:var(--surface);padding:18px;border-radius:10px;box-shadow:var(--shadow)}
+  .card h4{margin-top:0}
+  .card-img{width:100%;height:150px;object-fit:cover;border-radius:8px;margin-bottom:12px;display:block;background:#f2f6f4}
+  .media{width:100%;max-width:520px;max-height:300px;height:auto;border-radius:8px;display:block;background:#f2f6f4;box-shadow:var(--shadow);object-fit:cover}
+
+  /* Stats / pillars */
+  .stats{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .stat{background:var(--surface);padding:18px;border-radius:10px;text-align:center;box-shadow:var(--shadow)}
+  .stat-number{font-size:16px;font-weight:700;color:var(--primary)}
+  .stat-label{color:var(--muted);font-size:14px}
+
+  /* Contact & forms */
+  .contact-form{display:grid;gap:10px}
+  .contact-form input,.contact-form textarea,.subform input{padding:10px;border-radius:8px;border:1px solid #e6eef8;font-family:var(--body)}
+  .subform{display:flex;gap:8px;margin-top:10px}
+  .subform input{flex:1}
+
+  /* Footer */
+  .site-footer{background:transparent;padding:18px 0}
+  .footer-inner{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px;flex-wrap:wrap;gap:12px}
+
+  /* Utility */
+  .muted{color:var(--muted)}
+  .center{text-align:center}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">CLEARPATHS MARKETING</a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-primary" href="#contact">Start a Project</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero section--neutral" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Turn Your Mission Into Measurable Support</h1>
+          <p class="lead">We design and run face-to-face outreach and community activations that increase awareness, engagement and longâ€‘term support for charities and healthcare partners across the GTA.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Book a Consultation</a>
+            <a class="btn btn-ghost" href="#services">Explore Services</a>
+          </div>
+          <div class="rating">â˜…â˜…â˜…â˜…â˜…</div>
+        </div>
+
+        <div class="hero-image" aria-hidden="false">
+          <!-- inline SVG placeholder (hero) -->
+          <img class="hero-img" src="img/hero.jpg" alt="Outreach team" />
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section section--teal intro" aria-labelledby="intro-heading">
+      <div class="container">
+        <h2 id="intro-heading">Partnering to Amplify Impact</h2>
+        <p class="muted">Clearpaths Marketing combines trained field teams, strong operations and clear reporting to help mission-driven organisations reach more people and raise more funds.</p>
+        <div style="margin-top:16px">
+          <a class="btn btn-primary" href="#contact">Tell Us About Your Campaign</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--coral" aria-labelledby="about-heading">
+      <div class="container grid grid-2">
+        <div>
+          <h3 id="about-heading">About Clearpaths</h3>
+          <p>Based in the Greater Toronto Area (GTA), Clearpaths Marketing builds brand ambassador programmes, face-to-face outreach and full campaign rollouts. We focus on training, compliance and measurable conversations that convert.</p>
+          <p class="muted">We work with charities and healthcare partners to design campaigns that are ethical, compliant and performance-driven.</p>
+        </div>
+
+        <div class="center">
+          <!-- inline team illustration -->
+          <img class="media section-img" src="img/about.jpg" alt="Team meeting and campaign briefing" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section--teal services" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Services That Deliver Results</h2>
+        <p class="muted">Practical, measurable services built for charities and healthcare organisations.</p>
+<div class="center"><img class="services-top-img" src="img/sample4.jpg" alt="Services - team at work"></div>
+
+        <div style="margin-top:20px" class="grid grid-3">
+          <div class="card">
+            <div class="card-img" aria-hidden="true" style="display:flex;align-items:center;justify-content:center;">
+              <!-- simple icon / placeholder -->
+              <svg width="100%" height="100%" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="120" height="80" rx="8" fill="#fff"/>
+                <path d="M12 60 L36 36 L68 68 L108 28" stroke="#0B8F6B" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4>Fundraising Strategy</h4>
+            <p>Data-led campaign design that increases donor conversion and lifetime value.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-img" aria-hidden="true" style="display:flex;align-items:center;justify-content:center;">
+              <svg width="100%" height="100%" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="120" height="80" rx="8" fill="#fff"/>
+                <circle cx="36" cy="40" r="12" fill="#FF8A65" opacity="0.18"/>
+                <circle cx="84" cy="32" r="10" fill="#0B8F6B" opacity="0.12"/>
+                <rect x="18" y="56" width="84" height="8" rx="4" fill="#E9F7F2"/>
+              </svg>
+            </div>
+            <h4>Donor Engagement</h4>
+            <p>Face-to-face conversations and follow-up systems that build long-term supporter relationships.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-img" aria-hidden="true" style="display:flex;align-items:center;justify-content:center;">
+              <svg width="100%" height="100%" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="120" height="80" rx="8" fill="#fff"/>
+                <rect x="12" y="16" width="96" height="12" rx="6" fill="#E9F7F2"/>
+                <rect x="12" y="36" width="76" height="10" rx="5" fill="#E9F7F2"/>
+                <rect x="12" y="54" width="56" height="8" rx="4" fill="#E9F7F2"/>
+              </svg>
+            </div>
+            <h4>Campaign Operations</h4>
+            <p>Full campaign management: recruitment, training, routing and reporting for consistent performance.</p>
+          </div>
+        </div>
+
+        <!-- Pillars -->
+        <div class="stats" style="margin-top:24px">
+          <div class="stat">
+            <div class="stat-number">Strategic Design</div>
+            <div class="stat-label muted">Audience insight and efficient campaign scripts</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">Trained Teams</div>
+            <div class="stat-label muted">Professional ambassadors with robust onboarding</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">Transparent Reporting</div>
+            <div class="stat-label muted">Clear KPIs and donor reporting for every campaign</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE SERVICES -->
+    <section class="section section--coral more-services" aria-labelledby="more-heading">
+      <div class="container grid grid-3">
+        <div class="card">
+          <h4>Face-to-Face Outreach</h4>
+          <p>Skilled canvassers trained to present your cause respectfully and effectively.</p>
+        </div>
+        <div class="card">
+          <h4>Brand Ambassador Program</h4>
+          <p>On-brand ambassadors for events, activations and long-term outreach.</p>
+        </div>
+        <div class="card">
+          <h4>Campaign Rollouts</h4>
+          <p>Pilots to full-scale deployments â€” logistics, compliance and optimisation included.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREERS (inline, accessible) -->
+    <section id="careers" class="section section--teal" aria-labelledby="careers-heading">
+      <div class="container">
+        <h2 id="careers-heading">Careers</h2>
+        <div class="grid grid-2">
+          <div>
+            <h3>Brand Ambassador â€” Sales Associate</h3>
+            <p><strong>Apply Now â€¢ Call to enquire</strong></p>
+
+            <h4>Role summary</h4>
+            <p>As a Brand Ambassador (Sales Associate), you will represent partner organisations at events and in community locations. This in-person role suits confident communicators who present professionally and create meaningful supporter conversations.</p>
+
+            <h4>Who weâ€™re looking for</h4>
+            <ul>
+              <li>Experience in sales, customer service or fundraising is an asset</li>
+              <li>Strong verbal and interpersonal skills</li>
+              <li>Reliable, punctual and presentable</li>
+              <li>Must be based in or near the Greater Toronto Area (GTA)</li>
+            </ul>
+
+            <p><strong>To apply or learn more: call 705â€‘888â€‘2065</strong></p>
+          </div>
+
+          <div class="center">
+            <!-- Careers illustration -->
+            <img class="media section-img" src="img/careers.jpg" alt="Brand ambassador talking to a passerby" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--coral contact" aria-labelledby="contact-heading">
+      <div class="container grid grid-2">
+        <div>
+          <h2 id="contact-heading">Contact Us</h2>
+          <p>Tell us about your goals and weâ€™ll design a campaign that meets them.</p>
+          <ul class="contact-info">
+            <li><strong>Phone:</strong> 705â€‘888â€‘2065</li>
+            <li><strong>Email:</strong> marketingclearpaths@gmail.com</li>
+            <li><strong>Address:</strong> 110 Matheson Blvd W, Mississauga, ON L5R 4G7</li>
+            <li><strong>Hours:</strong> Office: 10:00 AM â€“ 5:00 PM; Field shifts: 12:30 PM â€“ 8:30 PM</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Get in touch</h3>
+          <p class="muted">Short enquiry â€” we typically reply within one business day.</p>
+
+          <!-- small contact illustration -->
+          <div style="margin-bottom:12px">
+            <img class="media section-img" src="img/contact-office.jpg" alt="Office reception and contact" />
+          </div>
+
+          <form class="contact-form" action="#" method="post" aria-label="Contact form">
+            <input type="text" name="name" placeholder="Your first name" required>
+            <input type="email" name="email" placeholder="Your email address" required>
+            <textarea name="message" placeholder="Your message" rows="4"></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+
+          <div class="newsletter" style="margin-top:12px">
+            <h4>Subscribe</h4>
+            <form action="#" class="subform" aria-label="Subscribe form">
+              <input type="email" placeholder="Enter your email address">
+              <button class="btn btn-ghost" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>CLEARPATHS MARKETING</strong><br>
+        110 Matheson Blvd W, Mississauga, ON L5R 4G7<br>
+        705â€‘888â€‘2065 â€” marketingclearpaths@gmail.com
+      </div>
+      <div class="footer-right">
+        <div>Â© <span id="year"></span> Clearpaths Marketing</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple smooth scrolling for same-page nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
