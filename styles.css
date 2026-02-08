@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 body {
@@ -11,16 +11,13 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 header {
   background: #0f172a;
   padding: 20px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .logo {
@@ -30,7 +27,7 @@ header {
 }
 
 .logo span {
-  color: #3b82f6;
+  color: #2563eb;
 }
 
 nav a {
@@ -42,31 +39,32 @@ nav a {
 }
 
 nav a:hover {
-  color: #3b82f6;
+  color: #2563eb;
 }
 
-/* Hero */
+/* HERO SECTION */
 .hero {
   height: 85vh;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   position: relative;
+  text-align: center;
+  padding: 0 8%;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(2,6,23,0.75);
+  background: rgba(5, 15, 35, 0.75);
 }
 
 .hero .container {
   position: relative;
-  width: 100%;
-  padding: 0 10%;
+  max-width: 800px;
 }
 
 .hero h1 {
@@ -81,24 +79,25 @@ nav a:hover {
 }
 
 .btn {
-  background: #3b82f6;
+  background: #2563eb;
   padding: 14px 28px;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
   transition: 0.3s;
+  display: inline-block;
 }
 
 .btn:hover {
-  background: #2563eb;
+  background: #1d4ed8;
 }
 
-/* Sections */
+/* CONTENT SECTION */
 .content-section {
   padding: 80px 10%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
 }
 
@@ -115,10 +114,27 @@ nav a:hover {
 
 .content-box h2 {
   margin-bottom: 15px;
-  color: #3b82f6;
+  color: #2563eb;
+  font-size: 22px;
 }
 
-/* Chart */
+.content-box p {
+  color: #cbd5e1;
+}
+
+/* IMAGE FIX */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content-section img {
+  max-height: 320px;
+  object-fit: cover;
+}
+
+/* STATS SECTION */
 .stats {
   padding: 80px 10%;
   background: #0f172a;
@@ -149,10 +165,10 @@ nav a:hover {
 
 .bar-fill {
   height: 100%;
-  background: #3b82f6;
+  background: #2563eb;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background: #0f172a;
   text-align: center;
