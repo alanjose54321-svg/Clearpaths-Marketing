@@ -1,9 +1,8 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -12,30 +11,22 @@ body {
   line-height: 1.6;
 }
 
-/* CONTAINER */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* HEADER */
+/* Header */
 header {
   background: #0f172a;
-  padding: 20px 0;
-  border-bottom: 1px solid #1e293b;
-}
-
-.header-inner {
+  padding: 20px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
   font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .logo span {
@@ -43,11 +34,10 @@ header {
 }
 
 nav a {
-  color: #cbd5e1;
+  color: #e2e8f0;
   text-decoration: none;
   margin-left: 25px;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-weight: 500;
   transition: 0.3s;
 }
 
@@ -55,13 +45,14 @@ nav a:hover {
   color: #3b82f6;
 }
 
-/* HERO SECTION */
+/* Hero */
 .hero {
   height: 85vh;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
+  text-align: center;
   position: relative;
 }
 
@@ -69,13 +60,13 @@ nav a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(2,6,23,0.75);
 }
 
 .hero .container {
   position: relative;
-  z-index: 2;
-  max-width: 700px;
+  width: 100%;
+  padding: 0 10%;
 }
 
 .hero h1 {
@@ -85,23 +76,17 @@ nav a:hover {
 
 .hero p {
   font-size: 18px;
+  color: #cbd5e1;
   margin-bottom: 30px;
-  color: #e2e8f0;
 }
 
-.small-hero {
-  height: 50vh;
-}
-
-/* BUTTON */
 .btn {
-  display: inline-block;
-  padding: 12px 28px;
   background: #3b82f6;
-  color: white;
+  padding: 14px 28px;
+  color: #fff;
   text-decoration: none;
   border-radius: 6px;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -109,97 +94,69 @@ nav a:hover {
   background: #2563eb;
 }
 
-/* GENERAL SECTIONS */
-.section {
-  padding: 80px 0;
+/* Sections */
+.content-section {
+  padding: 80px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 40px;
 }
 
-.section-light {
-  background: #f8fafc;
-  color: #0f172a;
-}
-
-.section-dark {
+.content-box {
   background: #111827;
-  color: white;
-}
-
-.section h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-/* GRID CARDS */
-.grid {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
-  background: #1e293b;
-  padding: 30px;
+  padding: 35px;
   border-radius: 10px;
-  flex: 1;
-  min-width: 280px;
   transition: 0.3s;
 }
 
-.card:hover {
+.content-box:hover {
   transform: translateY(-5px);
 }
 
-.card h3 {
+.content-box h2 {
   margin-bottom: 15px;
   color: #3b82f6;
 }
 
-/* SPLIT LAYOUT */
-.split-section {
-  display: flex;
-  min-height: 450px;
-}
-
-.split-section.reverse {
-  flex-direction: row-reverse;
-}
-
-.split-image {
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-}
-
-.split-content {
-  flex: 1;
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* Chart */
+.stats {
+  padding: 80px 10%;
   background: #0f172a;
+  text-align: center;
 }
 
-.split-content h2,
-.split-content h3 {
-  margin-bottom: 20px;
-  color: #3b82f6;
+.stats h2 {
+  margin-bottom: 40px;
 }
 
-.split-content p {
-  color: #cbd5e1;
+.stat-bar {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
 }
 
-/* BENEFITS */
-.benefits {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+.stat-bar span {
+  display: block;
+  margin-bottom: 8px;
 }
 
-.benefit-box {
-  background: white;
-  color: #0f172a;
+.bar {
+  background: #1e293b;
+  height: 14px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #3b82f6;
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  text-align: center;
   padding: 30px;
-  b
+  margin-top: 60px;
+  color: #94a3b8;
+}
