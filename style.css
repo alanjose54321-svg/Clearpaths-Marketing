@@ -1,189 +1,107 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
 }
 
-body {
-  line-height: 1.6;
-  color: #1a1a1a;
+body{
+  line-height:1.6;
+  color:#222;
 }
 
 /* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  position: fixed;
-  width: 100%;
-  background: white;
-  z-index: 1000;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:#ffffff;
+  box-shadow:0 2px 15px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: 700;
+.logo{
+  font-size:24px;
+  font-weight:700;
 }
 
-.logo span {
-  color: #0057ff;
+.logo span{
+  color:#0d6efd;
 }
 
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: 0.3s;
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  transition:.3s;
 }
 
-nav a:hover {
-  color: #0057ff;
+nav a:hover{
+  color:#0d6efd;
 }
 
 /* HERO */
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  padding: 0 8%;
-  color: white;
+.hero{
+  padding:120px 8%;
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80');
+  background-size:cover;
+  background-position:center;
+  color:white;
 }
 
-.hero-content {
-  max-width: 600px;
+.hero h1{
+  font-size:48px;
+  margin-bottom:20px;
 }
 
-.hero h1 {
-  font-size: 52px;
-  margin-bottom: 20px;
+.hero p{
+  font-size:20px;
+  max-width:600px;
+  margin-bottom:30px;
 }
 
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
+.btn{
+  display:inline-block;
+  padding:14px 30px;
+  background:#0d6efd;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  margin-right:15px;
+  font-weight:600;
+  transition:.3s;
 }
 
-.btn {
-  padding: 14px 30px;
-  background: #0057ff;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  margin-right: 15px;
-  transition: 0.3s;
+.btn:hover{
+  background:#084298;
 }
 
-.btn:hover {
-  background: #003bb5;
+/* SECTIONS */
+.section{
+  padding:100px 8%;
 }
 
-/* SECTION */
-.section {
-  padding: 100px 8%;
+.light{
+  background:#f5f7fb;
 }
 
-.section-light {
-  background: #f4f7fb;
+.dark{
+  background:#111;
+  color:white;
 }
 
-.section-dark {
-  background: #111;
-  color: white;
+.section h2{
+  font-size:38px;
+  margin-bottom:40px;
+  text-align:center;
 }
 
-.section h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-/* SPLIT SECTION */
-.split {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-
-.split img {
-  width: 50%;
-  border-radius: 12px;
-}
-
-.split-text {
-  width: 50%;
-}
-
-.split-text h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.section-dark .card {
-  background: #1c1c1c;
-}
-
-/* CTA */
-.cta {
-  background: linear-gradient(90deg, #0057ff, #00a2ff);
-  color: white;
-  text-align: center;
-  padding: 80px 8%;
-}
-
-.cta h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-/* FOOTER */
-footer {
-  background: #000;
-  color: white;
-  text-align: center;
-  padding: 30px;
-}
-
-/* MOBILE */
-@media(max-width: 900px){
-  .split {
-    flex-direction: column;
-  }
-
-  .split img,
-  .split-text {
-    width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-}
-
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr
