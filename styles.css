@@ -1,147 +1,292 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+/* ===== GLOBAL RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-  background-color: #0a0f1c;
-  color: #ffffff;
-  line-height: 1.6;
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height:1.6;
+  color:#ffffff;
 }
 
-/* HEADER */
-header {
-  background-color: #111827;
-  padding: 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #1f2937;
+/* ===== HEADER ===== */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:#0b1a2d;
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
+.logo{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:1px;
 }
 
-.logo span {
-  color: #2563eb;
+.logo span{
+  color:#3fa9f5;
 }
 
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #cbd5e1;
-  font-size: 15px;
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:500;
+  transition:0.3s;
 }
 
-nav a:hover {
-  color: white;
+nav a:hover{
+  color:#3fa9f5;
 }
 
-/* HERO */
-.hero {
-  padding: 140px 8%;
-  background: #0f172a;
+/* ===== PAGE BACKGROUNDS ===== */
+
+body.home-page{
+  background:linear-gradient(to bottom,#081421,#0f2238);
 }
 
-.hero h1 {
-  font-size: 46px;
-  margin-bottom: 20px;
+body.services-page{
+  background:linear-gradient(to bottom,#0d1b2a,#112f4a);
 }
 
-.hero p {
-  font-size: 18px;
-  color: #9ca3af;
-  margin-bottom: 30px;
+body.community-page{
+  background:linear-gradient(to bottom,#0a1624,#1a2e44);
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  background-color: #2563eb;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
+body.careers-page{
+  background:linear-gradient(to bottom,#111827,#1f2937);
 }
 
-.btn:hover {
-  background-color: #1d4ed8;
+body.contact-page{
+  background:#0b1a2d;
 }
 
-/* SECTIONS */
-.section {
-  padding: 100px 8%;
+/* ===== HERO SECTIONS ===== */
+
+.hero, .services-hero{
+  padding:100px 8%;
+  text-align:center;
 }
 
-.section-dark {
-  background-color: #111827;
+.hero h1,
+.services-hero h1{
+  font-size:48px;
+  margin-bottom:20px;
 }
 
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: white;
-  border-left: 4px solid #2563eb;
-  padding-left: 12px;
+.hero p,
+.services-hero p{
+  font-size:18px;
+  max-width:700px;
+  margin:0 auto 30px auto;
+  opacity:0.85;
 }
 
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  background:#3fa9f5;
+  color:white;
+  text-decoration:none;
+  border-radius:4px;
+  transition:0.3s;
 }
 
-.card {
-  background-color: #1f2937;
-  padding: 30px;
-  border-radius: 6px;
+.btn:hover{
+  background:#2c82c9;
 }
 
-.card h3 {
-  margin-bottom: 15px;
-  color: white;
+/* ===== SECTIONS ===== */
+
+section{
+  padding:80px 8%;
 }
 
-.card p {
-  color: #cbd5e1;
+h2{
+  font-size:32px;
+  margin-bottom:25px;
+  position:relative;
+  display:inline-block;
 }
 
-/* PROGRESS */
-.progress-box {
-  max-width: 700px;
+h2::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+  width:60px;
+  height:4px;
+  background:#3fa9f5;
 }
 
-.progress-box p {
-  margin: 20px 0 8px;
+/* ===== GRID LAYOUT ===== */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+  margin-top:40px;
 }
 
-.progress-bar {
-  background-color: #1f2937;
-  border-radius: 20px;
-  overflow: hidden;
+.grid div{
+  background:#12263d;
+  padding:30px;
+  border-radius:6px;
+  transition:0.3s;
 }
 
-.progress-fill {
-  background-color: #2563eb;
-  padding: 8px;
-  text-align: right;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 20px;
+.grid div:hover{
+  transform:translateY(-6px);
+  background:#17385a;
 }
 
-/* FOOTER */
-footer {
-  background-color: #0b0f19;
-  padding: 40px;
-  text-align: center;
-  color: #6b7280;
-  font-size: 14px;
+.grid h3{
+  margin-bottom:15px;
+  color:#3fa9f5;
 }
 
+/* ===== SERVICE BLOCK (Alternating Layout) ===== */
+
+.service-block{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  margin-bottom:80px;
+}
+
+.service-block.reverse{
+  flex-direction:row-reverse;
+}
+
+.service-content{
+  flex:1;
+}
+
+.service-image{
+  flex:1;
+}
+
+.service-image img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+/* ===== SERVICE PANELS ===== */
+
+.service-panel-section{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:40px;
+}
+
+.service-panel{
+  background:#142c46;
+  padding:40px;
+  border-left:6px solid #3fa9f5;
+}
+
+/* ===== STATS SECTION ===== */
+
+.stats{
+  display:flex;
+  justify-content:space-around;
+  background:#112f4a;
+  padding:60px 0;
+  text-align:center;
+}
+
+.stat h3{
+  font-size:40px;
+  color:#3fa9f5;
+}
+
+.stat p{
+  margin-top:10px;
+  opacity:0.8;
+}
+
+/* ===== PROGRESS BARS (Careers Page) ===== */
+
+.progress-bar{
+  margin-bottom:25px;
+}
+
+.progress-bar span{
+  display:block;
+  margin-bottom:8px;
+}
+
+.bar{
+  background:#1e3a5f;
+  height:10px;
+  border-radius:5px;
+  overflow:hidden;
+}
+
+.bar-fill{
+  height:100%;
+  background:#3fa9f5;
+}
+
+/* ===== CONTACT SECTION ===== */
+
+.contact-box{
+  background:#12263d;
+  padding:60px;
+  text-align:center;
+  border-radius:6px;
+}
+
+.contact-box a{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 30px;
+  background:#3fa9f5;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.contact-box a:hover{
+  background:#2c82c9;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+  text-align:center;
+  padding:40px;
+  background:#081421;
+  font-size:14px;
+  opacity:0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+
+  .service-block{
+    flex-direction:column;
+  }
+
+  .service-block.reverse{
+    flex-direction:column;
+  }
+
+  .stats{
+    flex-direction:column;
+    gap:40px;
+  }
+
+  .hero h1{
+    font-size:36px;
+  }
+}
