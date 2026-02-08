@@ -3,12 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* BODY */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0b0f1a;
+  background: #0b1120;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -44,10 +43,11 @@ header {
 }
 
 nav a {
-  color: #ffffff;
+  color: #cbd5e1;
   text-decoration: none;
   margin-left: 25px;
   font-size: 14px;
+  text-transform: uppercase;
   transition: 0.3s;
 }
 
@@ -57,98 +57,51 @@ nav a:hover {
 
 /* HERO SECTION */
 .hero {
-  padding: 120px 0;
-  text-align: center;
+  height: 85vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 18px;
-  max-width: 700px;
-  margin: auto;
-  opacity: 0.9;
+  margin-bottom: 30px;
+  color: #e2e8f0;
 }
 
-/* SECTIONS */
-.section {
-  padding: 80px 0;
-}
-
-.section-light {
-  background-color: #111827;
-}
-
-.section-dark {
-  background-color: #0b1220;
-}
-
-.section h2 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: #3b82f6;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-}
-
-/* CARDS */
-.card {
-  background: #1e293b;
-  padding: 30px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.card h3 {
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: #ffffff;
-}
-
-.card p {
-  font-size: 15px;
-  color: #cbd5e1;
-}
-
-/* FOOTER */
-footer {
-  background: #0f172a;
-  padding: 30px 0;
-  text-align: center;
-  font-size: 14px;
-  border-top: 1px solid #1e293b;
+.small-hero {
+  height: 50vh;
 }
 
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 25px;
   padding: 12px 28px;
   background: #3b82f6;
   color: white;
   text-decoration: none;
   border-radius: 6px;
+  font-weight: 500;
   transition: 0.3s;
 }
 
@@ -156,41 +109,97 @@ footer {
   background: #2563eb;
 }
 
-/* RESPONSIVE */
-@media(max-width: 768px){
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  nav {
-    display: none;
-  }
-}
-/* STATS SECTION */
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-top: 40px;
-  flex-wrap: wrap;
+/* GENERAL SECTIONS */
+.section {
+  padding: 80px 0;
 }
 
-.stat-box {
-  background: #1e293b;
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-  width: 220px;
+.section-light {
+  background: #f8fafc;
+  color: #0f172a;
 }
 
-.stat-box h3 {
+.section-dark {
+  background: #111827;
+  color: white;
+}
+
+.section h2 {
   font-size: 36px;
-  color: #3b82f6;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.stat-box p {
-  font-size: 16px;
+/* GRID CARDS */
+.grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #3b82f6;
+}
+
+/* SPLIT LAYOUT */
+.split-section {
+  display: flex;
+  min-height: 450px;
+}
+
+.split-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.split-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.split-content {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0f172a;
+}
+
+.split-content h2,
+.split-content h3 {
+  margin-bottom: 20px;
+  color: #3b82f6;
+}
+
+.split-content p {
   color: #cbd5e1;
 }
 
+/* BENEFITS */
+.benefits {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.benefit-box {
+  background: white;
+  color: #0f172a;
+  padding: 30px;
+  b
