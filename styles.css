@@ -2,97 +2,92 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background: #0b1120;
-  color: #f1f5f9;
+  background-color: #0a0f1c;
+  color: #ffffff;
   line-height: 1.6;
 }
 
 /* HEADER */
 header {
-  background: #0f172a;
-  padding: 18px 8%;
+  background-color: #111827;
+  padding: 20px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #1f2937;
 }
 
 .logo {
   font-size: 22px;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: bold;
+  color: white;
 }
 
 .logo span {
-  color: #3b82f6;
+  color: #2563eb;
 }
 
 nav a {
-  margin-left: 28px;
+  margin-left: 25px;
   text-decoration: none;
   color: #cbd5e1;
   font-size: 15px;
-  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ffffff;
+  color: white;
 }
 
 /* HERO */
 .hero {
   padding: 140px 8%;
-  background: linear-gradient(180deg, #0b1120 0%, #111827 100%);
-}
-
-.hero-content {
-  max-width: 850px;
+  background: #0f172a;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 46px;
   margin-bottom: 20px;
-  font-weight: 700;
 }
 
 .hero p {
   font-size: 18px;
-  color: #94a3b8;
+  color: #9ca3af;
   margin-bottom: 30px;
 }
 
 .btn {
-  background: #3b82f6;
-  color: white;
+  display: inline-block;
   padding: 12px 28px;
+  background-color: #2563eb;
+  color: white;
   text-decoration: none;
   border-radius: 4px;
-  font-weight: 600;
-  transition: 0.3s;
+  font-weight: bold;
 }
 
 .btn:hover {
-  background: #2563eb;
+  background-color: #1d4ed8;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
   padding: 100px 8%;
 }
 
 .section-dark {
-  background: #0f172a;
+  background-color: #111827;
 }
 
 .section h2 {
   font-size: 32px;
   margin-bottom: 50px;
-  border-left: 5px solid #3b82f6;
-  padding-left: 15px;
+  color: white;
+  border-left: 4px solid #2563eb;
+  padding-left: 12px;
 }
 
 /* GRID */
@@ -103,30 +98,23 @@ nav a:hover {
 }
 
 .card {
-  background: #111827;
+  background-color: #1f2937;
   padding: 30px;
-  border-radius: 8px;
-  border: 1px solid #1e293b;
-  transition: 0.3s;
+  border-radius: 6px;
 }
 
 .card h3 {
   margin-bottom: 15px;
-  color: #ffffff;
+  color: white;
 }
 
 .card p {
-  color: #94a3b8;
+  color: #cbd5e1;
 }
 
-.card:hover {
-  border-color: #3b82f6;
-  transform: translateY(-4px);
-}
-
-/* PROGRESS SECTION */
+/* PROGRESS */
 .progress-box {
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .progress-box p {
@@ -134,25 +122,26 @@ nav a:hover {
 }
 
 .progress-bar {
-  background: #1e293b;
-  border-radius: 30px;
+  background-color: #1f2937;
+  border-radius: 20px;
   overflow: hidden;
 }
 
 .progress-fill {
-  background: #3b82f6;
+  background-color: #2563eb;
   padding: 8px;
   text-align: right;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 /* FOOTER */
 footer {
-  background: #020617;
-  text-align: center;
+  background-color: #0b0f19;
   padding: 40px;
+  text-align: center;
+  color: #6b7280;
   font-size: 14px;
-  color: #64748b;
 }
+
