@@ -160,3 +160,17 @@ footer {
   margin-top: 60px;
   color: #94a3b8;
 }
+/* Fix oversized images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.content-section img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
