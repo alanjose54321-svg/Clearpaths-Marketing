@@ -1,77 +1,125 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>ClearPaths Marketing | Home</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<nav>
-    <a href="index.html" class="logo">CLEARPATHS</a>
-
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</nav>
-
-<header class="hero" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070');">
-    <div>
-        <h1>Strategic Intelligence for Modern Growth</h1>
-        <p>We connect brands to communities through ethical, face-to-face engagement and performance-driven campaigns.</p>
-        <a href="services.html" class="btn">Explore Services</a>
-    </div>
-</header>
-
-<div class="container">
-    <h2 class="section-title">Why ClearPaths?</h2>
-
-    <div class="box">
-        <p>
-        In an AI-driven world, authentic human interaction matters more than ever.
-        We specialize in professional in-person marketing campaigns that build trust,
-        increase donor acquisition, and generate measurable growth.
-        </p>
-    </div>
-
-    <div class="grid">
-        <div class="box">
-            <h3>Community Outreach</h3>
-            <p>Strategic public engagement campaigns that build awareness and trust.</p>
-        </div>
-
-        <div class="box">
-            <h3>Brand Representation</h3>
-            <p>Professional ambassadors trained to communicate with clarity and impact.</p>
-        </div>
-
-        <div class="box">
-            <h3>Performance Growth</h3>
-            <p>Structured systems designed to deliver measurable weekly results.</p>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <p>© 2025 ClearPaths Marketing. All rights reserved.</p>
-</footer>
-
-<script>
-function toggleMenu(){
-    document.querySelector('.nav-links').classList.toggle('active');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-</script>
 
-</body>
-</html>
+body {
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600") center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 40px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: white;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* CONTENT */
+.content {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    background: #111;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
