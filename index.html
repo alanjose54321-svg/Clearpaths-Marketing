@@ -1,77 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>ClearPaths Marketing | Home</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>LUXE.CONSULT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-    <a href="index.html" class="logo">CLEARPATHS</a>
+<nav class="navbar">
+  <div class="logo">LUXE.CONSULT</div>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="community.html">Community</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
 </nav>
 
-<header class="hero" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070');">
-    <div>
-        <h1>Strategic Intelligence for Modern Growth</h1>
-        <p>We connect brands to communities through ethical, face-to-face engagement and performance-driven campaigns.</p>
-        <a href="services.html" class="btn">Explore Services</a>
-    </div>
+<header class="hero">
+  <div class="hero-content">
+    <h1>Strategic Intelligence for Modern Enterprises</h1>
+    <p>
+      We help brands grow through people-driven strategy, face-to-face engagement,
+      and long-term market positioning.
+    </p>
+    <a href="services.html" class="btn">Explore Our Services</a>
+  </div>
 </header>
 
-<div class="container">
-    <h2 class="section-title">Why ClearPaths?</h2>
+<section class="content">
+  <h2>Why Human-Centered Marketing Still Wins</h2>
+  <p>
+    In a world dominated by automation and AI, real human connection stands out.
+    Face-to-face marketing builds trust faster, communicates authenticity,
+    and creates lasting brand loyalty that digital ads simply cannot replicate.
+  </p>
 
-    <div class="box">
-        <p>
-        In an AI-driven world, authentic human interaction matters more than ever.
-        We specialize in professional in-person marketing campaigns that build trust,
-        increase donor acquisition, and generate measurable growth.
-        </p>
-    </div>
-
-    <div class="grid">
-        <div class="box">
-            <h3>Community Outreach</h3>
-            <p>Strategic public engagement campaigns that build awareness and trust.</p>
-        </div>
-
-        <div class="box">
-            <h3>Brand Representation</h3>
-            <p>Professional ambassadors trained to communicate with clarity and impact.</p>
-        </div>
-
-        <div class="box">
-            <h3>Performance Growth</h3>
-            <p>Structured systems designed to deliver measurable weekly results.</p>
-        </div>
-    </div>
-</div>
+  <p>
+    Our teams represent trusted brands directly in communities, creating
+    meaningful conversations that convert attention into action.
+  </p>
+</section>
 
 <footer>
-    <p>© 2025 ClearPaths Marketing. All rights reserved.</p>
+  <p>© 2025 Luxe Consult. All rights reserved.</p>
 </footer>
 
-<script>
-function toggleMenu(){
-    document.querySelector('.nav-links').classList.toggle('active');
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
