@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ClearPaths Marketing</title>
+<meta charset="UTF-8">
+<title>ClearPaths Marketing | Home</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
-<div class="logo">CLEARPATHS</div>
+    <a href="index.html" class="logo">CLEARPATHS</a>
 
-<div class="menu-toggle" id="menuToggle">
-<span></span>
-<span></span>
-<span></span>
-</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
-<ul class="nav-links" id="navLinks">
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="community.html">Community</a></li>
-<li><a href="careers.html">Careers</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </nav>
 
-<header class="hero">
-<h1>More Than Marketing — Real Human Impact</h1>
-<p>We specialize in high-performance face-to-face marketing campaigns that build trust, create engagement, and deliver measurable growth for brands across Canada.</p>
-<a href="services.html" class="btn">Explore Our Services</a>
+<header class="hero" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070');">
+    <div>
+        <h1>Strategic Intelligence for Modern Growth</h1>
+        <p>We connect brands to communities through ethical, face-to-face engagement and performance-driven campaigns.</p>
+        <a href="services.html" class="btn">Explore Services</a>
+    </div>
 </header>
 
-<div class="stats-bar">
-<div class="stat-item"><h2>98%</h2><p>Client Retention</p></div>
-<div class="stat-item"><h2>12+</h2><p>Active Campaigns</p></div>
-<div class="stat-item"><h2>$2M+</h2><p>Revenue Generated</p></div>
-<div class="stat-item"><h2>5000+</h2><p>Customer Interactions Weekly</p></div>
-</div>
+<div class="container">
+    <h2 class="section-title">Why ClearPaths?</h2>
 
-<section class="container">
-<h2>Why Face-to-Face Marketing Still Wins</h2>
+    <div class="box">
+        <p>
+        In an AI-driven world, authentic human interaction matters more than ever.
+        We specialize in professional in-person marketing campaigns that build trust,
+        increase donor acquisition, and generate measurable growth.
+        </p>
+    </div>
 
-<div class="grid-3">
-<div class="card">
-<h3>Human Connection</h3>
-<p>In a world dominated by AI and digital ads, real conversations create lasting impressions and immediate trust.</p>
-</div>
+    <div class="grid">
+        <div class="box">
+            <h3>Community Outreach</h3>
+            <p>Strategic public engagement campaigns that build awareness and trust.</p>
+        </div>
 
-<div class="card">
-<h3>Brand Authority</h3>
-<p>We represent brands professionally in community settings, increasing credibility and public visibility.</p>
-</div>
+        <div class="box">
+            <h3>Brand Representation</h3>
+            <p>Professional ambassadors trained to communicate with clarity and impact.</p>
+        </div>
 
-<div class="card">
-<h3>Measurable Growth</h3>
-<p>Every campaign is performance-driven, tracked, and optimized to maximize ROI.</p>
+        <div class="box">
+            <h3>Performance Growth</h3>
+            <p>Structured systems designed to deliver measurable weekly results.</p>
+        </div>
+    </div>
 </div>
-</div>
-</section>
 
 <footer>
-<div class="footer-content">
-<div>
-<h4>CLEARPATHS</h4>
-<p>Strategic field marketing and brand development solutions.</p>
-</div>
-</div>
-<div class="footer-bottom">
-© 2025 ClearPaths Marketing. All rights reserved.
-</div>
+    <p>© 2025 ClearPaths Marketing. All rights reserved.</p>
 </footer>
 
 <script>
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
-menuToggle.addEventListener("click", () => {
-navLinks.classList.toggle("active");
-});
+function toggleMenu(){
+    document.querySelector('.nav-links').classList.toggle('active');
+}
 </script>
 
 </body>
