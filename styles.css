@@ -161,3 +161,203 @@ footer {
         font-size: 32px;
     }
 }
+/* =============================
+   GLOBAL STYLES
+============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0b1c2d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* =============================
+   NAVIGATION
+============================= */
+
+nav {
+    background: #071421;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #4da3ff;
+}
+
+/* Hamburger */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Mobile */
+@media(max-width: 900px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #071421;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* =============================
+   HERO
+============================= */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 140px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #1f6feb;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #3c8dff;
+}
+
+/* =============================
+   CARDS / GRID
+============================= */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #11283c;
+    padding: 30px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #4da3ff;
+}
+
+/* =============================
+   STATS BAR
+============================= */
+
+.stats-bar {
+    background: #0f2438;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    text-align: center;
+    padding: 40px 0;
+}
+
+.stat-item h2 {
+    font-size: 36px;
+    color: #4da3ff;
+}
+
+/* =============================
+   FOOTER
+============================= */
+
+footer {
+    background: #050d16;
+    padding: 40px 5%;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+}
+
