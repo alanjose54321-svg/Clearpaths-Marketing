@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact | ClearPaths Marketing</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClearPaths | Contact</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <a href="index.html" class="logo">CLEARPATHS</a>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="community.html">Community</a>
-        <a href="careers.html">Careers</a>
-        <a href="contact.html" class="active">Contact</a>
-    </div>
+    <div class="logo">CLEARPATHS</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
 </nav>
 
-<header class="hero" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2000');">
-    <div class="hero-content">
-        <h1>Let’s Build Your Growth Strategy</h1>
-        <p>Connect with our advisory team.</p>
-    </div>
+<header class="page-hero">
+    <h1>Connect With Us</h1>
+    <p>Your partner in impactful marketing solutions.</p>
 </header>
 
-<section class="section">
-    <h2 class="section-title">Corporate Inquiries</h2>
-    <p>Email: marketingclearpaths@gmail.com</p>
-    <p>Head Office: Toronto, Ontario</p>
+<section class="container">
+
+<div class="content-block center">
+<h2>Email</h2>
+<p>marketingclearpaths@gmail.com</p>
+</div>
+
+<div class="content-block center">
+<h2>Locations</h2>
+<p>Toronto, Ontario</p>
+<p>Mississauga, ON</p>
+</div>
+
+<div class="content-block center">
+<h2>Business Hours</h2>
+<p>Monday – Friday</p>
+<p>1:00 PM – 8:00 PM</p>
+</div>
+
 </section>
 
 <footer>
-    <div class="footer-grid">
-        <div>
-            <h3>CLEARPATHS</h3>
-        </div>
-        <div>
-            <p>Strategic marketing advisory</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        © 2025 ClearPaths Marketing
-    </div>
+<p>© 2025 ClearPaths Marketing. All Rights Reserved.</p>
 </footer>
+
+<script>
+const toggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav-links');
+toggle.onclick = () => nav.classList.toggle('show');
+</script>
 
 </body>
 </html>
