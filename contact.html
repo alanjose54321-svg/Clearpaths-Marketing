@@ -1,96 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Clear Paths Marketing</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Connect | Clear Paths Marketing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
     <style>
-        /* Consistent Brightbridge Style Branding */
-        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; background-color: #ffffff; }
-        header { background: #003366; color: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { font-weight: 700; font-size: 20px; letter-spacing: 1px; }
-        nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: 400; font-size: 14px; transition: 0.3s; }
-        nav a:hover { color: #00AEEF; }
+        :root { --navy: #0a192f; --slate: #112240; --blue: #00AEEF; --white: #e6f1ff; }
+        * { box-sizing: border-box; transition: 0.3s; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: var(--navy); color: #8892b0; line-height: 1.6; }
+        header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0, 174, 239, 0.1); }
+        .logo { font-weight: 800; font-size: 18px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
         
-        .inner-hero { background: #002244; padding: 60px 8%; color: white; text-align: left; }
-        .inner-hero h1 { font-size: 36px; margin: 0; border-left: 5px solid #00AEEF; padding-left: 20px; text-transform: uppercase; }
-
-        .contact-container { display: flex; padding: 60px 8%; gap: 60px; flex-wrap: wrap; align-items: flex-start; }
-        .contact-info { flex: 1; min-width: 300px; }
-        .google-form-wrapper { flex: 1.5; min-width: 350px; background: #F8F9FA; border-radius: 8px; border: 1px solid #eee; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-
-        .contact-info h2 { color: #003366; font-size: 32px; margin-bottom: 20px; }
-        .contact-info p { line-height: 1.8; color: #666; margin-bottom: 30px; }
-        .info-item { margin-bottom: 25px; }
-        .info-item strong { display: block; color: #00AEEF; text-transform: uppercase; font-size: 12px; margin-bottom: 5px; letter-spacing: 1px; }
-
-        footer { background: #111; color: #ccc; padding: 60px 10% 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 14px; }
-        .footer-bottom { grid-column: 1 / -1; text-align: center; border-top: 1px solid #333; padding-top: 20px; margin-top: 20px; }
+        .contact-section { padding: 100px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+        .contact-details h1 { color: var(--white); font-size: 45px; margin-top: 0; }
+        .contact-details p { font-size: 18px; margin-bottom: 40px; }
         
-        @media (max-width: 768px) {
-            .contact-container { flex-direction: column; padding: 40px 5%; }
-            footer { grid-template-columns: 1fr 1fr; }
-        }
+        .info-box { margin-bottom: 30px; display: flex; align-items: center; gap: 20px; }
+        .info-box i { font-size: 24px; color: var(--blue); width: 30px; }
+        .info-box h4 { color: var(--white); margin: 0; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+
+        .glass-portal { background: rgba(17, 34, 64, 0.6); backdrop-filter: blur(10px); padding: 50px; border-radius: 4px; border: 1px solid rgba(0, 174, 239, 0.2); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .glass-portal h2 { color: var(--white); margin-bottom: 30px; font-size: 24px; }
+        
+        .btn-submit { background: transparent; border: 1px solid var(--blue); color: var(--blue); padding: 15px 30px; width: 100%; font-weight: 700; cursor: pointer; text-transform: uppercase; margin-top: 20px; }
+        .btn-submit:hover { background: rgba(0, 174, 239, 0.1); }
+        
+        footer { background: #020c1b; padding: 80px 10% 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; border-top: 1px solid var(--slate); font-size: 13px; }
+        @media (max-width: 900px) { .contact-section, footer { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">CLEAR PATHS MARKETING</div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="services.html">SERVICES</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
+<header><a href="index.html" class="logo">CLEAR PATHS /</a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav></header>
 
-    <section class="inner-hero">
-        <h1>GET IN TOUCH</h1>
-    </section>
-
-    <div class="contact-container">
-        <!-- Contact Identity Section -->
-        <div class="contact-info">
-            <h2>Connect With Our Strategists</h2>
-            <p>Ready to clarify your marketing path? Reach out to us for a personalized consultation and see how our data-driven approach can scale your business. We typically respond within 24 business hours.</p>
-            
-            <div class="info-item">
-                <strong>Email Address</strong>
-                info@clearpathsmarketing.com
-            </div>
-            <div class="info-item">
-                <strong>Primary Location</strong>
-                Toronto, Ontario, Canada
-            </div>
-            <div class="info-item">
-                <strong>Business Hours</strong>
-                Monday - Friday: 9:00 AM - 5:00 PM EST
-            </div>
+<section class="contact-section">
+    <div class="contact-details">
+        <h1>Initiate <br> Consultation.</h1>
+        <p>Connect with our strategic architects to discuss your brand's digital trajectory.</p>
+        
+        <div class="info-box">
+            <i class="fas fa-envelope"></i>
+            <div><h4>Direct Inquiry</h4><span>info@clearpathsmarketing.com</span></div>
         </div>
-
-        <!-- Google Form Integration -->
-        <div class="google-form-wrapper">
-            <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfiMdRpt8eGJzO4qBgzzHxXDLTFQn7T5G1j6PJi4IK-CguH0Q/viewform?embedded=true" 
-                width="100%" 
-                height="900" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-                Loading marketing intake form…
-            </iframe>
+        <div class="info-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><h4>Operational HQ</h4><span>Toronto, Ontario, Canada</span></div>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-clock"></i>
+            <div><h4>Business Hours</h4><span>09:00 - 17:00 EST</span></div>
         </div>
     </div>
 
-    <footer>
-        <div><strong>Clear Paths</strong><p>Your partner in marketing growth and digital clarity.</p></div>
-        <div><strong>Navigation</strong><br><a href="index.html" style="color:#ccc; text-decoration:none;">Home</a><br><a href="about.html" style="color:#ccc; text-decoration:none;">About Us</a></div>
-        <div><strong>Expertise</strong><br>SEO Analysis<br>Digital Identity</div>
-        <div><strong>Contact</strong><br>Toronto, Canada<br>info@clearpathsmarketing.com</div>
-        <div class="footer-bottom">© 2024 Clear Paths Marketing. All Rights Reserved.</div>
-    </footer>
+    <div class="glass-portal">
+        <h2>Strategic Inquiry</h2>
+        <p>Please utilize the secure portal below to submit your project brief.</p>
+        <a href="YOUR_GOOGLE_FORM_LINK" style="text-decoration:none;">
+            <div class="btn-submit" style="text-align:center;">Launch Project Intake Form</div>
+        </a>
+        <p style="font-size: 11px; margin-top: 20px; color: #495670;">*All submissions are encrypted and reviewed by our senior leadership team.</p>
+    </div>
+</section>
+
+<footer>
+    <div><h5 style="color:#fff">MISSION</h5><p>Architecting digital authority with technical excellence.</p></div>
+    <div><h5 style="color:#fff">SOLUTIONS</h5><p>SEO / PPC / Ads</p></div>
+    <div><h5 style="color:#fff">RESOURCES</h5><p>Careers / Community</p></div>
+    <div><h5 style="color:#fff">CONNECT</h5><p>© 2024 Clear Paths</p></div>
+</footer>
 
 </body>
 </html>
