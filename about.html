@@ -12,36 +12,45 @@
         header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0, 174, 239, 0.1); }
         .logo { font-weight: 800; font-size: 18px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
         nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
-        .inner-hero { padding: 80px 10%; background: #020c1b; border-bottom: 1px solid var(--slate); }
-        .inner-hero h1 { color: var(--white); font-size: 40px; margin: 0; letter-spacing: 2px; }
-        .content-split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 100px 10%; align-items: center; }
-        .text-block h2 { color: var(--blue); font-size: 30px; margin-bottom: 20px; }
-        .text-block p { margin-bottom: 20px; font-size: 17px; }
-        .image-block { border: 1px solid var(--blue); padding: 10px; border-radius: 4px; }
-        .image-block img { width: 100%; border-radius: 2px; filter: grayscale(100%) contrast(1.2); }
-        .image-block:hover img { filter: grayscale(0%); }
-        footer { background: #020c1b; padding: 60px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 12px; border-top: 1px solid var(--blue); }
-        @media (max-width: 900px) { .content-split, footer { grid-template-columns: 1fr; } }
+        .inner-hero { padding: 80px 10%; background: #020c1b; border-bottom: 1px solid var(--slate); text-align: center; }
+        .inner-hero h1 { color: var(--white); font-size: 40px; letter-spacing: 2px; }
+        .section-split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 100px 10%; align-items: center; }
+        .text-block h2 { color: var(--blue); font-size: 32px; margin-bottom: 25px; }
+        .text-block p { font-size: 17px; margin-bottom: 20px; }
+        .image-accent { border: 1px solid var(--blue); padding: 10px; border-radius: 4px; }
+        .image-accent img { width: 100%; filter: grayscale(100%); transition: 0.5s; }
+        .image-accent:hover img { filter: grayscale(0%); }
+        .mission-bar { background: var(--slate); padding: 80px 10%; text-align: center; border-top: 1px solid var(--blue); }
+        footer { background: #020c1b; padding: 60px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 12px; }
+        @media (max-width: 900px) { .section-split, footer { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 <header><a href="index.html" class="logo">CLEAR PATHS /</a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav></header>
+
 <section class="inner-hero"><h1>BUILDING GLOBAL SYSTEMS</h1></section>
-<section class="content-split">
+
+<section class="section-split">
     <div class="text-block">
-        <h2>Our Strategic Mandate</h2>
-        <p>At Clear Paths Marketing, we don't just execute campaigns; we architect digital infrastructure. Our agency was founded on the principle that modern brands require technical precision and data-driven clarity to dominate their respective markets.</p>
-        <p>Based in Toronto, our reach is global. We partner with enterprises that demand measurable performance and a clear methodology for scaling brand authority across complex digital landscapes.</p>
+        <h2>Advocacy with Integrity</h2>
+        <p>Clear Paths Marketing was founded on a singular mandate: to provide the world’s most respected hospital foundations and charities with a professional, high-standard face for public engagement.</p>
+        <p>In a saturated digital world, we believe human connection is the most powerful tool for philanthropic growth. Our team of specialists is trained to navigate complex advocacy landscapes, turning brand mission into sustainable monthly capital.</p>
     </div>
-    <div class="image-block">
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="Executive Office">
+    <div class="image-accent">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800" alt="Consultation">
     </div>
 </section>
+
+<section class="mission-bar">
+    <h2 style="color:var(--white);">A Clear Vision for Future Health</h2>
+    <p style="max-width:800px; margin: 20px auto;">We act as the guardians of our charity partners' brands. By focusing on quality over quantity, we ensure that every donor acquisition is built on transparency and a shared commitment to global wellness.</p>
+</section>
+
 <footer>
-    <div><h5 style="color:#fff">MISSION</h5><p>Architecting digital authority with technical excellence.</p></div>
-    <div><h5 style="color:#fff">SOLUTIONS</h5><p>SEO / PPC / Ads</p></div>
-    <div><h5 style="color:#fff">RESOURCES</h5><p>Careers / Community</p></div>
-    <div><h5 style="color:#fff">LEGAL</h5><p>© 2024 Clear Paths</p></div>
+    <div><h5 style="color:#fff">MISSION</h5><p>Architecting philanthropic authority with professional excellence.</p></div>
+    <div><h5 style="color:#fff">SOLUTIONS</h5><p>Acquisition / Advocacy</p></div>
+    <div><h5 style="color:#fff">RESOURCES</h5><p>FAQ / Community</p></div>
+    <div><h5 style="color:#fff">LEGAL</h5><p>© 2024 Clear Paths Marketing</p></div>
 </footer>
 </body>
 </html>
