@@ -2,63 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Our Services | Clear Paths Marketing</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Our Solutions | Clear Paths Marketing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
     <style>
-        body{font-family:'Montserrat',sans-serif;margin:0;padding:0;color:#333;line-height:1.7;background:#fff}
-        header{background:#003366;color:#fff;padding:20px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:4px solid #00AEEF;position:sticky;top:0;z-index:1000}
-        .hero{background:linear-gradient(rgba(0,34,68,0.85),rgba(0,34,68,0.85)),url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600');height:40vh;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;background-size:cover}
-        .section{padding:80px 10%}
-        .service-row{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-bottom:80px;align-items:center}
-        .service-row.reverse{flex-direction:row-reverse;display:flex}
-        .text-box h2{color:#003366;font-size:30px;margin-bottom:20px;border-left:5px solid #00AEEF;padding-left:15px}
-        .deliverables{list-style:none;padding:0;margin-top:20px}
-        .deliverables li{margin-bottom:10px;padding-left:25px;position:relative}
-        .deliverables li::before{content:'✓';color:#00AEEF;position:absolute;left:0;font-weight:bold}
-        .img-box{background:#f4f7f9;height:350px;border-radius:10px;background-size:cover;background-position:center;box-shadow:15px 15px 0px #003366}
-        nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:700;font-size:11px;text-transform:uppercase}
-        footer{background:#111;color:#ccc;padding:60px 10%;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+        :root { --navy: #0a192f; --slate: #112240; --blue: #00AEEF; --white: #e6f1ff; }
+        * { box-sizing: border-box; transition: 0.3s; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: var(--navy); color: #8892b0; line-height: 1.6; }
+        header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0, 174, 239, 0.1); }
+        .logo { font-weight: 800; font-size: 18px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+        .inner-hero { padding: 80px 10%; background: #020c1b; border-bottom: 1px solid var(--slate); text-align: center; }
+        .inner-hero h1 { color: var(--white); font-size: clamp(30px, 5vw, 45px); margin: 0; letter-spacing: 3px; }
+        .service-section { padding: 100px 10%; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .service-row { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .service-row.reverse { direction: rtl; } 
+        .service-row.reverse .text-side { direction: ltr; }
+        .text-side h2 { color: var(--blue); font-size: 32px; margin-bottom: 20px; text-transform: uppercase; }
+        .list { list-style: none; padding: 0; margin-top: 30px; }
+        .list li { margin-bottom: 12px; padding-left: 30px; position: relative; font-size: 14px; color: var(--white); }
+        .list li::before { content: '→'; color: var(--blue); position: absolute; left: 0; font-weight: bold; }
+        .img-panel { background: var(--slate); border: 1px solid var(--blue); height: 400px; border-radius: 4px; background-size: cover; background-position: center; filter: grayscale(100%); transition: 0.5s; }
+        .img-panel:hover { filter: grayscale(0%); box-shadow: 0 0 30px rgba(0, 174, 239, 0.2); }
+        footer { background: #020c1b; padding: 60px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 12px; border-top: 1px solid var(--blue); }
+        @media (max-width: 900px) { .service-row, footer { grid-template-columns: 1fr; } .service-row.reverse { direction: ltr; } }
     </style>
 </head>
 <body>
-<header><strong>CLEAR PATHS MARKETING</strong><nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav></header>
-<section class="hero"><div><h1>STRATEGIC MARKETING SOLUTIONS</h1><p>Performance Architecture for Global Brands</p></div></section>
-<section class="section">
+<header><a href="index.html" class="logo">CLEAR PATHS /</a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav></header>
+
+<section class="inner-hero"><h1>PERFORMANCE ARCHITECTURE</h1></section>
+
+<section class="service-section">
     <div class="service-row">
-        <div class="text-box">
-            <h2>Search Engine Optimization</h2>
-            <p>We build technical SEO infrastructures that allow your brand to dominate search rankings. Our data-driven approach focuses on long-term organic growth and authority.</p>
-            <ul class="deliverables">
-                <li>Full Technical Site Audits</li>
-                <li>Competitive Keyword Architecture</li>
-                <li>Backlink Profile Engineering</li>
-                <li>Local & Global SEO Scaling</li>
+        <div class="text-side">
+            <h2>01. SEO Infrastructure</h2>
+            <p>We build technical foundations that allow brands to dominate organic search landscapes. Our methodology moves beyond keywords into authority engineering.</p>
+            <ul class="list">
+                <li>Algorithmic Gap Analysis</li>
+                <li>Technical Crawler Optimization</li>
+                <li>Semantic Content Architecture</li>
+                <li>Global Market Localization</li>
             </ul>
         </div>
-        <div class="img-box" style="background-image:url('https://images.unsplash.com/photo-1551288049-bbbda540d3ad?w=800')"></div>
+        <div class="img-panel" style="background-image: url('https://images.unsplash.com/photo-1551288049-bbbda540d3ad?w=800')"></div>
     </div>
+</section>
+
+<section class="service-section" style="background: rgba(255,255,255,0.02);">
     <div class="service-row reverse">
-        <div class="text-box" style="flex:1">
-            <h2>Brand Design & Authority</h2>
-            <p>Visual identity is the foundation of trust. We create corporate identity systems that project professional excellence and command marketplace attention.</p>
-            <ul class="deliverables">
-                <li>Visual Identity Development</li>
-                <li>Corporate Style Guidelines</li>
-                <li>User Experience (UX) Strategy</li>
-                <li>Brand Voice & Messaging</li>
+        <div class="text-side">
+            <h2>02. Performance Media</h2>
+            <p>Meticulous multi-channel ROI oversight. We manage high-scale advertising budgets with a focus on precision targeting and creative data optimization.</p>
+            <ul class="list">
+                <li>Paid Search & Social Scaling</li>
+                <li>Retargeting Funnel Engineering</li>
+                <li>Conversion Rate Optimization (CRO)</li>
+                <li>Attribution Data Modeling</li>
             </ul>
         </div>
-        <div class="img-box" style="flex:1;background-image:url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=800')"></div>
+        <div class="img-panel" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800')"></div>
     </div>
 </section>
-<section class="section" style="background:#003366;color:#fff;text-align:center;">
-    <h2>Data-First Performance Ads</h2>
-    <p style="max-width:800px;margin:20px auto;">We manage multi-channel PPC campaigns with meticulous ROI oversight. Our performance marketing is built on real-time analytics and continuous optimization.</p>
-</section>
+
 <footer>
-    <div><h4>OFFICE</h4><p>Toronto, Ontario</p></div>
-    <div><h4>SOLUTIONS</h4><p>SEO / Branding / PPC</p></div>
-    <div><h4>RESOURCES</h4><p>FAQ / Community</p></div>
-    <div><h4>LEGAL</h4><p>© 2024 Clear Paths</p></div>
+    <div><h5 style="color:#fff">MISSION</h5><p>Architecting digital authority with technical excellence.</p></div>
+    <div><h5 style="color:#fff">SOLUTIONS</h5><p>SEO / PPC / Ads</p></div>
+    <div><h5 style="color:#fff">RESOURCES</h5><p>Careers / Community</p></div>
+    <div><h5 style="color:#fff">LEGAL</h5><p>© 2024 Clear Paths Marketing</p></div>
 </footer>
-</body></html>
+</body>
+</html>
