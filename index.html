@@ -9,48 +9,70 @@
         :root { --navy: #0a192f; --slate: #112240; --blue: #00AEEF; --white: #e6f1ff; }
         * { box-sizing: border-box; transition: 0.3s; }
         body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: var(--navy); color: #8892b0; line-height: 1.6; }
-        header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0, 174, 239, 0.1); }
-        .logo { font-weight: 800; font-size: 18px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
-        nav { display: flex; flex-wrap: wrap; }
-        nav a { color: var(--white); text-decoration: none; margin-left: 15px; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
-        nav a:hover { color: var(--blue); }
-        .hero { height: 75vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; background: linear-gradient(rgba(10,25,47,0.8), rgba(10,25,47,0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop'); background-size: cover; background-position: center; }
-        .hero h1 { font-size: clamp(30px, 5vw, 60px); color: var(--white); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
-        .btn { border: 1px solid var(--blue); color: var(--blue); padding: 15px 35px; text-decoration: none; display: inline-block; font-weight: 600; border-radius: 2px; }
-        .data-bar { background: #020c1b; padding: 50px 10%; display: flex; justify-content: space-around; text-align: center; border-bottom: 1px solid var(--slate); }
-        .data-bar h2 { font-size: 35px; color: var(--blue); margin: 0; }
-        .section { padding: 80px 10%; }
-        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-        .card { background: var(--slate); padding: 40px; border-radius: 4px; border: 1px solid transparent; }
-        .card i { font-size: 30px; color: var(--blue); margin-bottom: 20px; }
-        .card h3 { color: var(--white); margin-bottom: 15px; }
-        .block-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 40px; }
-        .block { height: 300px; border-radius: 4px; display: flex; align-items: flex-end; padding: 30px; position: relative; text-decoration: none; background-size: cover; background-position: center; overflow: hidden; }
+        
+        /* THE MOBILE-RESPONSIVE HEADER */
+        header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--blue); }
+        .logo { font-weight: 800; font-size: 16px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
+        
+        /* HAMBURGER MENU LOGIC */
+        #menu-toggle { display: none; }
+        .hamburger { display: none; cursor: pointer; color: var(--white); font-size: 24px; }
+        nav { display: flex; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 15px; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+
+        @media (max-width: 900px) {
+            .hamburger { display: block; }
+            nav { 
+                display: none; position: absolute; top: 100%; left: 0; width: 100%; 
+                background: var(--navy); flex-direction: column; padding: 20px; border-bottom: 2px solid var(--blue);
+            }
+            nav a { margin: 15px 0; font-size: 14px; text-align: center; }
+            #menu-toggle:checked ~ nav { display: flex; }
+            .grid, .block-grid, footer { grid-template-columns: 1fr !important; }
+            .hero h1 { font-size: 32px !important; }
+        }
+
+        /* BRIGHTBRIDGE THEME SECTIONS */
+        .hero { height: 65vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; background: linear-gradient(rgba(10,25,47,0.8), rgba(10,25,47,0.8)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format'); background-size: cover; }
+        .hero h1 { font-size: 50px; color: var(--white); font-weight: 800; }
+        .data-bar { background: #020c1b; padding: 40px; display: flex; justify-content: space-around; text-align: center; }
+        .data-bar h2 { font-size: 30px; color: var(--blue); margin: 0; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 60px 10%; }
+        .card { background: var(--slate); padding: 30px; border-radius: 4px; border-bottom: 3px solid var(--blue); }
+        .block-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 0 10% 60px; }
+        .block { height: 250px; border-radius: 4px; display: flex; align-items: flex-end; padding: 20px; text-decoration: none; background-size: cover; position: relative; overflow: hidden; }
         .block::after { content: ''; position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, rgba(10,25,47,0.9), transparent); }
-        .block span { position: relative; z-index: 2; color: var(--white); font-size: 24px; font-weight: 800; }
-        footer { background: #020c1b; padding: 80px 10% 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; font-size: 12px; border-top: 2px solid var(--blue); }
-        footer h4 { color: var(--white); text-transform: uppercase; margin-bottom: 20px; letter-spacing: 2px; }
-        footer a { color: #8892b0; text-decoration: none; display: block; margin-bottom: 10px; }
-        @media (max-width: 900px) { .grid, .block-grid, footer { grid-template-columns: 1fr; } }
+        .block span { position: relative; z-index: 2; color: var(--white); font-weight: 800; font-size: 20px; }
+        footer { background: #020c1b; padding: 60px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 12px; }
     </style>
 </head>
 <body>
 <header>
     <a href="index.html" class="logo">CLEAR PATHS /</a>
-    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="careers.html">Careers</a><a href="community.html">Community</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+    <nav>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+        <a href="careers.html">Careers</a><a href="community.html">Community</a>
+        <a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+    </nav>
 </header>
 <section class="hero">
-    <div><h1>Architecting <br> Digital Authority.</h1><p>Strategic growth and philanthropic advocacy for hospital foundations.</p><a href="contact.html" class="btn">INITIATE AUDIT</a></div>
+    <div><h1>Strategic Advocacy.</h1><p>Professional Donor Acquisition.</p></div>
 </section>
 <div class="data-bar">
-    <div><h2>150+</h2><p>CAMPAIGNS</p></div><div><h2>98%</h2><p>RETENTION</p></div><div><h2>$25M+</h2><p>CAPITAL</p></div>
+    <div><h2>150+</h2><p>CAMPAIGNS</p></div><div><h2>98%</h2><p>RETENTION</p></div>
 </div>
-<section class="section">
-    <div class="grid">
-        <div class="card"><i class="fas fa-hospital-user"></i><h3>Advocacy</h3><p>Professional representation for major medical foundations.</p></div>
-        <div class="card"><i class="fas fa-users-cog"></i><h3>Marketing</h3><p>Executing high-scale engagement for donor quality.</p></div>
-        <div class="card"><i class="fas fa-hand-holding-heart"></i><h3>Acquisition</h3><p>Strategic recruitment of sustainer donors for funding.</p></div>
-    </div>
-    <div class="block-grid">
-        <a href="careers.html" class="block" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800')"><span>Careers</span></a>
-        <a href="community.html" class="block" style="background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q
+<section class="grid">
+    <div class="card"><h3>Hospital Advocacy</h3><p>Representing major foundations.</p></div>
+    <div class="card"><h3>Field Marketing</h3><p>Donor relationship quality.</p></div>
+    <div class="card"><h3>Acquisition</h3><p>Long-term sustainer funding.</p></div>
+</section>
+<div class="block-grid">
+    <a href="careers.html" class="block" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600')"><span>Careers</span></a>
+    <a href="community.html" class="block" style="background-image:url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600')"><span>Community</span></a>
+</div>
+<footer style="color:#8892b0">
+    <div><h4>Links</h4><a href="about.html" style="color:#8892b0">About Us</a></div>
+    <div><h4>Support</h4><a href="faq.html" style="color:#8892b0">FAQ</a></div>
+    <div><h4>Status</h4><p>Toronto,
