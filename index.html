@@ -1,87 +1,62 @@
-Here is the **fully inclusive, high-density code** for your homepage. 
-
-This version combines the **Brightbridge Executive Layout** (Blue/Gold/Slate) with the **Coreark Fundraising & Team Culture** content. It is designed to be a "long-scroll" site that looks established, professional, and busy. 🏛️
-
-**Please delete everything in your `index.html` and paste this entire block:**
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Clear Paths Marketing | Strategic Donor Advocacy</title>
-    <!-- Technical UI & Brightbridge Font -->
+    <title>Clear Paths Marketing | Professional Donor Acquisition</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; transition: 0.3s ease; }
-        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.8; background: #fff; }
-        
-        /* EXECUTIVE NAVIGATION */
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.7; background: #fff; }
         header { background: #003366; color: white; padding: 22px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 5px solid #00AEEF; }
         .logo { font-weight: 800; font-size: 20px; color: #fff; text-decoration: none; letter-spacing: 1px; }
-        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
-        nav a:hover { color: #00AEEF; }
-
-        /* HERO - ADVOCACY FOCUSED */
-        .hero { background: linear-gradient(rgba(0, 51, 102, 0.75), rgba(0, 51, 102, 0.75)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600'); height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background-size: cover; background-position: center; }
-        .hero h1 { font-size: clamp(32px, 5vw, 55px); margin-bottom: 25px; font-weight: 800; line-height: 1.2; }
-        .btn-main { background: #00AEEF; color: white; padding: 18px 45px; text-decoration: none; border-radius: 4px; font-weight: 700; display: inline-block; border: 2px solid #00AEEF; }
-        .btn-main:hover { background: #fff; color: #003366; }
-
-        /* DATA STRIP */
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 700; font-size: 11px; text-transform: uppercase; }
+        .hero { background: linear-gradient(rgba(0,51,102,0.75),rgba(0,51,102,0.75)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600'); height: 75vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background-size: cover; background-position: center; }
+        .btn-main { background: #00AEEF; color: white; padding: 18px 45px; text-decoration: none; border-radius: 4px; font-weight: 700; display: inline-block; }
         .data-bar { background: #f4f7f9; padding: 50px 10%; display: flex; justify-content: space-around; text-align: center; border-bottom: 1px solid #eee; }
         .data-bar h2 { font-size: 35px; color: #003366; margin: 0; }
-        .data-bar p { font-size: 12px; font-weight: 700; color: #00AEEF; text-transform: uppercase; }
-
-        /* PILLAR SECTION */
-        .section { padding: 100px 10%; }
-        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-        .card { padding: 50px 30px; border: 1px solid #eee; background: white; border-radius: 5px; text-align: center; }
-        .card i { font-size: 40px; color: #00AEEF; margin-bottom: 25px; }
-        .card h3 { color: #003366; font-size: 22px; margin-bottom: 15px; border-bottom: 3px solid #00AEEF; display: inline-block; padding-bottom: 5px; }
-
-        /* CAREERS / JOIN OUR TEAM - COREARK STYLE */
-        .join-team { background: #003366; color: white; padding: 100px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-        .join-team h2 { font-size: 38px; margin-bottom: 25px; }
-        .join-team p { font-size: 18px; margin-bottom: 20px; opacity: 0.9; }
-        .culture-box { background: rgba(255,255,255,0.1); padding: 40px; border-radius: 8px; border-left: 5px solid #00AEEF; }
-
-        /* FOOTER */
-        footer { background: #111; color: #ccc; padding: 80px 10% 30px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; font-size: 14px; }
-        footer h4 { color: #fff; text-transform: uppercase; margin-bottom: 25px; border-left: 3px solid #00AEEF; padding-left: 15px; }
-        .bottom-bar { grid-column: 1 / -1; text-align: center; border-top: 1px solid #333; padding-top: 30px; margin-top: 40px; font-size: 12px; }
-
-        @media (max-width: 900px) { .grid-3, .join-team, footer { grid-template-columns: 1fr; } .hero h1 { font-size: 38px; } }
+        .card-grid { padding: 80px 10%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .card { padding: 40px; border: 1px solid #eee; text-align: center; border-radius: 5px; }
+        .card i { font-size: 40px; color: #00AEEF; margin-bottom: 20px; }
+        .join-team { background: #003366; color: white; padding: 80px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .culture-box { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 8px; border-left: 5px solid #00AEEF; }
+        footer { background: #111; color: #ccc; padding: 60px 10% 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 13px; }
+        footer h4 { color: #fff; border-bottom: 2px solid #00AEEF; padding-bottom: 10px; margin-bottom: 15px; }
+        @media (max-width: 900px) { .card-grid, .join-team, footer { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-
-<header>
-    <a href="index.html" class="logo">CLEAR PATHS /</a>
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="services.html">SOLUTIONS</a>
-        <a href="contact.html">CONNECT</a>
-    </nav>
-</header>
-
+<header><a href="index.html" class="logo">CLEAR PATHS /</a><nav><a href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="services.html">SOLUTIONS</a><a href="contact.html">CONNECT</a></nav></header>
 <section class="hero">
     <div>
         <h1>Advocacy That Powers <br> Professional Growth.</h1>
-        <p style="font-size: 20px; max-width: 800px; margin: 25px auto;">Specializing in professional face-to-face donor acquisition for Canada’s premier hospital foundations and world-class relief organizations.</p>
-        <a href="contact.html" class="btn-main">DISCOVER OUR MISSION</a>
+        <p style="font-size: 18px; max-width: 800px; margin: 25px auto;">Specializing in professional face-to-face donor acquisition for Canada’s premier hospital foundations.</p>
+        <a href="contact.html" class="btn-main">OUR MISSION</a>
     </div>
 </section>
-
 <div class="data-bar">
-    <div><h2>150+</h2><p>HOSPITAL CAMPAIGNS</p></div>
-    <div><h2>98%</h2><p>PARTNER RETENTION</p></div>
-    <div><h2>$25M+</h2><p>CAPITAL SECURED</p></div>
+    <div><h2>150+</h2><p>CAMPAIGNS</p></div><div><h2>98%</h2><p>RETENTION</p></div><div><h2>$25M+</h2><p>CAPITAL</p></div>
 </div>
-
-<section class="section">
-    <div style="text-align:center; margin-bottom:60px;">
-        <h2 style="color:#003366; font-size:36px;">Field Marketing Architecture</h2>
-        <p style="max-width:750px; margin:0 auto;">We move beyond digital noise to create real, human connections. By representing world-class charities with Passion and Integrity, we provide the predictable
+<section class="card-grid">
+    <div class="card"><i class="fas fa-hospital-user"></i><h3>Hospital Advocacy</h3><p>Professional representation for major medical research foundations.</p></div>
+    <div class="card"><i class="fas fa-users"></i><h3>Field Marketing</h3><p>Executing high-scale engagement with a focus on donor quality.</p></div>
+    <div class="card"><i class="fas fa-hand-holding-heart"></i><h3>Acquisition</h3><p>Strategic recruitment of sustainer donors for long-term funding.</p></div>
+</section>
+<section class="join-team">
+    <div>
+        <h2>Join Our Elite Team</h2>
+        <p>We provide an environment where passionate individuals grow into industry leaders representing respected charities.</p>
+        <a href="contact.html" class="btn-main" style="background:#fff; color:#003366;">APPLY NOW</a>
+    </div>
+    <div class="culture-box">
+        <h3>Why Our Path?</h3>
+        <p>✓ Expert-Led Mentorship</p><p>✓ Direct Social Impact</p><p>✓ Professional Training</p>
+    </div>
+</section>
+<footer>
+    <div><h4>Company</h4><p>Toronto, Ontario, Canada</p></div>
+    <div><h4>Solutions</h4><p>Hospital Advocacy<br>Field Marketing</p></div>
+    <div><h4>Resources</h4><p>Careers<br>FAQ</p></div>
+    <div><h4>Connect</h4><p>info@clearpathsmarketing.com</p></div>
+</footer>
+</body></html>
