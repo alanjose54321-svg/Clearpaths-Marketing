@@ -1,67 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>About Us | Clear Paths Marketing</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
     <style>
-        /* Same CSS for consistency */
-        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; }
-        header { background: #003366; color: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { font-weight: 700; font-size: 20px; letter-spacing: 1px; }
-        nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: 400; font-size: 14px; }
-        
-        /* Specific Inner Page Hero */
-        .inner-hero { background: #002244; padding: 60px 8%; color: white; text-align: left; }
-        .inner-hero h1 { font-size: 36px; margin: 0; border-left: 5px solid #00AEEF; padding-left: 20px; }
-
-        /* Split Section Layout (Brightbridge Style) */
-        .about-section { display: flex; align-items: center; padding: 80px 8%; gap: 60px; flex-wrap: wrap; }
-        .about-content { flex: 1; min-width: 300px; }
-        .about-image { flex: 1; min-width: 300px; }
-        .about-image img { width: 100%; border-radius: 8px; box-shadow: 15px 15px 0px #00AEEF; } /* Shadow mimics their accent style */
-        
-        .about-content h2 { color: #003366; font-size: 32px; margin-bottom: 20px; }
-        .about-content p { line-height: 1.8; margin-bottom: 20px; text-align: justify; }
-
-        footer { background: #111; color: #ccc; padding: 60px 10% 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 14px; margin-top: 50px;}
-        .footer-bottom { grid-column: 1 / -1; text-align: center; border-top: 1px solid #333; padding-top: 20px; margin-top: 20px; }
+        :root { --navy: #0a192f; --slate: #112240; --blue: #00AEEF; --white: #e6f1ff; }
+        * { box-sizing: border-box; transition: 0.3s; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: var(--navy); color: #8892b0; line-height: 1.6; }
+        header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0, 174, 239, 0.1); }
+        .logo { font-weight: 800; font-size: 18px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
+        nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+        .inner-hero { padding: 80px 10%; background: #020c1b; border-bottom: 1px solid var(--slate); }
+        .inner-hero h1 { color: var(--white); font-size: 40px; margin: 0; letter-spacing: 2px; }
+        .content-split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 100px 10%; align-items: center; }
+        .text-block h2 { color: var(--blue); font-size: 30px; margin-bottom: 20px; }
+        .text-block p { margin-bottom: 20px; font-size: 17px; }
+        .image-block { border: 1px solid var(--blue); padding: 10px; border-radius: 4px; }
+        .image-block img { width: 100%; border-radius: 2px; filter: grayscale(100%) contrast(1.2); }
+        .image-block:hover img { filter: grayscale(0%); }
+        footer { background: #020c1b; padding: 60px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 12px; border-top: 1px solid var(--blue); }
+        @media (max-width: 900px) { .content-split, footer { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">CLEAR PATHS MARKETING</div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="services.html">SERVICES</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
-
-    <section class="inner-hero">
-        <h1>ABOUT OUR AGENCY</h1>
-    </section>
-
-    <section class="about-section">
-        <div class="about-content">
-            <h2>Leading with Strategy and Clarity</h2>
-            <p>Clear Paths Marketing is a specialized digital growth agency dedicated to helping businesses navigate the evolving global marketplace. Inspired by the need for transparent and effective marketing, we offer bespoke solutions that transform your digital presence into a powerful asset.</p>
-            <p>Our team brings together years of cross-industry experience, ensuring that every campaign is backed by data and executed with creative precision. We don't just provide services; we provide a roadmap for long-term sustainability and market leadership.</p>
-        </div>
-        <div class="about-image">
-            <!-- Replace with a professional team/office image -->
-            <img src="https://images.unsplash.com/photo-1522071823991-b99c22300ad5?auto=format&fit=crop&w=800" alt="Our Team">
-        </div>
-    </section>
-
-    <footer>
-        <div><strong>Clear Paths</strong><p>Your partner in marketing growth.</p></div>
-        <div><strong>Navigation</strong><br>Home<br>About Us</div>
-        <div><strong>Expertise</strong><br>SEO Analysis<br>Digital Identity</div>
-        <div><strong>Contact</strong><br>Toronto, Canada<br>info@clearpathsmarketing.com</div>
-        <div class="footer-bottom">© 2024 Clear Paths Marketing. All Rights Reserved.</div>
-    </footer>
+<header><a href="index.html" class="logo">CLEAR PATHS /</a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav></header>
+<section class="inner-hero"><h1>BUILDING GLOBAL SYSTEMS</h1></section>
+<section class="content-split">
+    <div class="text-block">
+        <h2>Our Strategic Mandate</h2>
+        <p>At Clear Paths Marketing, we don't just execute campaigns; we architect digital infrastructure. Our agency was founded on the principle that modern brands require technical precision and data-driven clarity to dominate their respective markets.</p>
+        <p>Based in Toronto, our reach is global. We partner with enterprises that demand measurable performance and a clear methodology for scaling brand authority across complex digital landscapes.</p>
+    </div>
+    <div class="image-block">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="Executive Office">
+    </div>
+</section>
+<footer>
+    <div><h5 style="color:#fff">MISSION</h5><p>Architecting digital authority with technical excellence.</p></div>
+    <div><h5 style="color:#fff">SOLUTIONS</h5><p>SEO / PPC / Ads</p></div>
+    <div><h5 style="color:#fff">RESOURCES</h5><p>Careers / Community</p></div>
+    <div><h5 style="color:#fff">LEGAL</h5><p>© 2024 Clear Paths</p></div>
+</footer>
 </body>
 </html>
