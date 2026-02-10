@@ -12,60 +12,48 @@
         header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0, 174, 239, 0.1); }
         .logo { font-weight: 800; font-size: 18px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
         nav a { color: var(--white); text-decoration: none; margin-left: 20px; font-size: 11px; font-weight: 600; text-transform: uppercase; }
-        
-        .faq-hero { padding: 80px 10%; background: #020c1b; border-bottom: 1px solid var(--slate); text-align: center; }
-        .faq-hero h1 { color: var(--white); font-size: 40px; letter-spacing: 3px; }
-        
-        .section { padding: 80px 15%; }
-        .faq-container { max-width: 900px; margin: 0 auto; }
+        .inner-hero { padding: 80px 10%; background: #020c1b; border-bottom: 1px solid var(--slate); text-align: center; }
+        .inner-hero h1 { color: var(--white); font-size: 40px; letter-spacing: 3px; }
+        .faq-section { padding: 100px 15%; max-width: 1200px; margin: 0 auto; }
         details { background: var(--slate); margin-bottom: 20px; padding: 25px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.05); cursor: pointer; }
         details[open] { border-color: var(--blue); }
-        summary { font-weight: 600; color: var(--white); font-size: 18px; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-        summary::-webkit-details-marker { display: none; }
+        summary { font-weight: 600; color: var(--white); font-size: 18px; list-style: none; outline: none; display: flex; justify-content: space-between; align-items: center; }
         summary::after { content: '+'; color: var(--blue); font-size: 24px; }
         details[open] summary::after { content: '-'; }
         .faq-content { padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 15px; font-size: 15px; }
-
-        footer { background: #020c1b; padding: 80px 10% 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; border-top: 1px solid var(--slate); font-size: 13px; }
-        @media (max-width: 900px) { .section { padding: 60px 8%; } footer { grid-template-columns: 1fr; } }
+        footer { background: #020c1b; padding: 60px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 12px; }
+        @media (max-width: 900px) { .faq-section { padding: 60px 8%; } footer { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-
 <header><a href="index.html" class="logo">CLEAR PATHS /</a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav></header>
 
-<section class="faq-hero">
-    <h1>OPERATIONAL SUPPORT.</h1>
-    <p>Clarifying our methodologies and strategic frameworks.</p>
-</section>
+<section class="inner-hero"><h1>STRATEGIC SUPPORT</h1></section>
 
-<section class="section">
-    <div class="faq-container">
-        <details>
-            <summary>How do you quantify marketing performance?</summary>
-            <div class="faq-content">Our agency utilizes advanced attribution modeling and 24/7 technical monitoring. We focus on multi-channel ROI and long-term brand equity scaling rather than surface-level vanity metrics.</div>
-        </details>
-        <details>
-            <summary>What is the typical strategic onboarding timeline?</summary>
-            <div class="faq-content">Professional onboarding requiring architectural audits takes 10 to 14 business days. This ensures that your brand’s technical foundation is secure before we initiate performance campaigns.</div>
-        </details>
-        <details>
-            <summary>Do you offer customized industry reporting?</summary>
-            <div class="faq-content">Yes. Every Clear Paths partner receives a dedicated executive dashboard, providing real-time transparency into and historical data of every strategic move we make across your digital ecosystem.</div>
-        </details>
-        <details>
-            <summary>How is data security handled during consultation?</summary>
-            <div class="faq-content">We operate with professional-grade encryption and strictly follow Canadian data privacy mandates. All strategic consultations are protected by robust non-disclosure frameworks.</div>
-        </details>
-    </div>
+<section class="faq-section">
+    <details>
+        <summary>What is your methodology for hospital donor acquisition?</summary>
+        <div class="faq-content">We utilize a high-standard advocacy model focused on monthly sustainer donor recruitment. Our field agents are trained in brand guardianship to ensure your hospital foundation's reputation is protected while we secure long-term revenue.</div>
+    </details>
+    <details>
+        <summary>How do you ensure donor retention and quality?</summary>
+        <div class="faq-content">Quality in face-to-face acquisition is our primary metric. We focus on meaningful conversations rather than volume, resulting in donors who have a higher affinity for your mission and a longer lifetime value (LTV).</div>
+    </details>
+    <details>
+        <summary>Is your agency compliant with Canadian data regulations?</summary>
+        <div class="faq-content">Yes. We strictly adhere to PIPA and PIPEDA regulations. Our acquisition architecture is built with professional-grade data security protocols to ensure all financial transitions are secure and compliant.</div>
+    </details>
+    <details>
+        <summary>How can charities track campaign performance?</summary>
+        <div class="faq-content">Every partner is provided with an executive reporting dashboard. This provides real-time transparency into field activity, donor demographics, and capital acquisition metrics.</div>
+    </details>
 </section>
 
 <footer>
-    <div><h5 style="color:#fff">MISSION</h5><p>Architecting digital authority with technical excellence.</p></div>
-    <div><h5 style="color:#fff">SOLUTIONS</h5><p>SEO / PPC / Ads</p></div>
-    <div><h5 style="color:#fff">RESOURCES</h5><p>Careers / FAQ</p></div>
+    <div><h5 style="color:#fff">MISSION</h5><p>Architecting philanthropic authority with excellence.</p></div>
+    <div><h5 style="color:#fff">SOLUTIONS</h5><p>Acquisition / Advocacy</p></div>
+    <div><h5 style="color:#fff">RESOURCES</h5><p>Careers / Community</p></div>
     <div><h5 style="color:#fff">LEGAL</h5><p>© 2024 Clear Paths Marketing</p></div>
 </footer>
-
 </body>
 </html>
