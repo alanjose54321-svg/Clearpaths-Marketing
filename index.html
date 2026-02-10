@@ -2,51 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Clear Paths Marketing | Strategic Philanthropic Advocacy</title>
+    <title>Clear Paths Marketing | Professional Donor Acquisition</title>
     <!-- Technical UI & Brightbridge Font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        * { box-sizing: border-box; transition: 0.3s; }
-        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.7; background: #fff; }
+        * { box-sizing: border-box; transition: 0.3s ease; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.8; background: #fff; }
         
-        /* THE BRIGHTBRIDGE EXECUTIVE NAV */
+        /* EXECUTIVE NAVIGATION */
         header { background: #003366; color: white; padding: 22px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 5px solid #00AEEF; }
         .logo { font-weight: 800; font-size: 20px; color: #fff; text-decoration: none; letter-spacing: 1px; }
-        nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
         nav a:hover { color: #00AEEF; }
 
-        /* THE BLUEPRINT HERO - DATA FOCUSED */
-        .hero { background: linear-gradient(rgba(0, 51, 102, 0.75), rgba(0, 51, 102, 0.75)), url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1600'); height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background-size: cover; background-position: center; }
-        .hero h1 { font-size: clamp(35px, 5vw, 60px); margin-bottom: 25px; font-weight: 800; line-height: 1.1; }
-        .btn-blue { background: #00AEEF; color: white; padding: 18px 45px; text-decoration: none; border-radius: 4px; font-weight: 700; display: inline-block; border: 2px solid #00AEEF; }
-        
-        /* DATA STRIP */
-        .data-bar { background: #f4f7f9; padding: 60px 10%; display: flex; justify-content: space-around; text-align: center; border-bottom: 1px solid #eee; }
-        .data-bar h2 { font-size: 40px; color: #003366; margin: 0; }
-        .data-bar p { font-size: 12px; font-weight: 700; color: #00AEEF; text-transform: uppercase; letter-spacing: 1px; }
+        /* HERO - ADVOCACY FOCUSED */
+        .hero { background: linear-gradient(rgba(0, 51, 102, 0.75), rgba(0, 51, 102, 0.75)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600'); height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background-size: cover; background-position: center; }
+        .hero h1 { font-size: clamp(32px, 5vw, 55px); margin-bottom: 25px; font-weight: 800; line-height: 1.2; }
+        .btn-main { background: #00AEEF; color: white; padding: 18px 45px; text-decoration: none; border-radius: 4px; font-weight: 700; display: inline-block; border: 2px solid #00AEEF; }
+        .btn-main:hover { background: #fff; color: #003366; }
 
-        /* COREARK-INSPIRED SERVICES IN BRIGHTBRIDGE LAYOUT */
+        /* PILLAR SECTION */
         .section { padding: 100px 10%; }
         .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-        .card { padding: 50px 30px; border: 1px solid #eee; background: white; border-radius: 5px; text-align: center; position: relative; }
+        .card { padding: 50px 30px; border: 1px solid #eee; background: white; border-radius: 5px; text-align: center; }
         .card i { font-size: 40px; color: #00AEEF; margin-bottom: 25px; }
-        .card h3 { color: #003366; font-size: 20px; margin-bottom: 15px; border-bottom: 3px solid #00AEEF; display: inline-block; padding-bottom: 5px; }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-color: #00AEEF; }
+        .card h3 { color: #003366; font-size: 22px; margin-bottom: 15px; border-bottom: 3px solid #00AEEF; display: inline-block; padding-bottom: 5px; }
 
-        /* THE BLUE "GOVERNANCE" SECTION */
-        .blue-section { background: #003366; color: white; padding: 100px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-        .blue-section h2 { font-size: 36px; margin-bottom: 25px; line-height: 1.2; }
-        .blue-section ul { list-style: none; padding: 0; }
-        .blue-section li { margin-bottom: 15px; display: flex; align-items: center; font-size: 17px; }
-        .blue-section li i { color: #00AEEF; margin-right: 15px; font-size: 20px; }
+        /* CAREERS / JOIN OUR TEAM - COREARK STYLE */
+        .join-team { background: #003366; color: white; padding: 100px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .join-team h2 { font-size: 38px; margin-bottom: 25px; }
+        .join-team p { font-size: 18px; margin-bottom: 20px; opacity: 0.9; }
+        .culture-box { background: rgba(255,255,255,0.1); padding: 40px; border-radius: 8px; border-left: 5px solid #00AEEF; }
 
-        /* FOOTER - THE SITE MAP */
+        /* FOOTER */
         footer { background: #111; color: #ccc; padding: 80px 10% 30px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; font-size: 14px; }
         footer h4 { color: #fff; text-transform: uppercase; margin-bottom: 25px; border-left: 3px solid #00AEEF; padding-left: 15px; }
-        .bottom { grid-column: 1 / -1; text-align: center; border-top: 1px solid #333; padding-top: 30px; margin-top: 50px; }
+        .bottom-bar { grid-column: 1 / -1; text-align: center; border-top: 1px solid #333; padding-top: 30px; margin-top: 40px; font-size: 12px; }
 
-        @media (max-width: 900px) { .grid-3, .blue-section, footer { grid-template-columns: 1fr; } .hero h1 { font-size: 38px; } }
+        @media (max-width: 900px) { .grid-3, .join-team, footer { grid-template-columns: 1fr; } .hero h1 { font-size: 38px; } }
     </style>
 </head>
 <body>
@@ -63,13 +57,25 @@
 
 <section class="hero">
     <div>
-        <h1>Architecting Excellence in <br> Philanthropic Growth.</h1>
-        <p style="font-size: 20px; max-width: 750px; margin: 30px auto;">We provide high-density donor acquisition and strategic advocacy for Canada's premier hospital foundations and global relief organizations.</p>
-        <a href="contact.html" class="btn-blue">INITIATE STRATEGIC AUDIT</a>
+        <h1>Advocacy That Powers <br> Professional Growth.</h1>
+        <p style="font-size: 20px; max-width: 800px; margin: 25px auto;">Specializing in professional face-to-face donor acquisition for Canada’s premier hospital foundations and global relief organizations.</p>
+        <a href="contact.html" class="btn-main">DISCOVER OUR MISSION</a>
     </div>
 </section>
 
-<div class="data-bar">
-    <div><h2>150+</h2><p>HOSPITAL CAMPAIGNS</p></div>
-    <div><h2>98%</h2><p>PARTNER RETENTION</p></div>
-    <div><h2>$25M+</h2><p>CAPITAL AC
+<section class="section">
+    <div style="text-align:center; margin-bottom:60px;">
+        <h2 style="color:#003366; font-size:36px;">Donor Acquisition Architecture</h2>
+        <p style="max-width:750px; margin:0 auto;">We move beyond digital noise to create real, human connections. By representing world-class charities with Passion and Integrity, we provide the predictable revenue needed for life-saving research.</p>
+    </div>
+    <div class="grid-3">
+        <div class="card"><i class="fas fa-hospital-user"></i><h3>Hospital Advocacy</h3><p>Professional representation for pediatrics and specialized medical research foundations.</p></div>
+        <div class="card"><i class="fas fa-users"></i><h3>Field Marketing</h3><p>Executing high-scale direct engagement campaigns with a focus on donor quality and long-term retention.</p></div>
+        <div class="card"><i class="fas fa-hand-holding-heart"></i><h3>Acquisition Strategy</h3><p>Strategic recruitment of monthly sustainer donors to ensure sustainable funding for our partners.</p></div>
+    </div>
+</section>
+
+<section class="join-team">
+    <div>
+        <h2>Join Our Elite Team <br> of Brand Advocates.</h2>
+        <p>At Clear Paths Marketing, we don’t just hire—we develop. We provide an environment where passionate individuals can grow into
