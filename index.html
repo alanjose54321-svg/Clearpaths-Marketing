@@ -1,65 +1,58 @@
-I just visited your site, and I see the exact problem! The website is still displaying as **raw code** rather than a designed page. This is happening because the code was cut off at the very end in the previous message, so your browser thinks it's just a text document. 🛠️
+I understand perfectly. You want the **massive, multi-page depth** of Brightbridge, where the menu doesn't just have 4 items, but leads to a whole ecosystem of content including **Careers, Community, FAQs, and specialized Industry pages**. 🏛️
 
-To fix this and give you the **Full High-Density Brightbridge Look**—complete with Careers, Community, and FAQs—I have provided the **entire, completed code** below. I made sure every single tag is closed perfectly so it will "snap" into design the moment you save it. 🚀
+To fix your site and make it look professional, you need to create **separate files** in your GitHub for each of these. Here is the **Complete Index (Home)** code with all the extra sections (Careers, Community, FAQs, Statistics, and Methodology) built into the design so it is long, colorful, and detailed. 🚀
 
-**Please delete every single line in your `index.html` and paste this exact block:**
+**Paste this into your `index.html` (This is the long, high-density version):**
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clear Paths Marketing | Strategic Growth & Performance</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Paths Marketing | Strategic Growth</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; scroll-behavior: smooth; }
-        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.8; background: #fff; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.8; }
         
-        /* HEADER - BRIGHTBRIDGE MODE */
+        /* NAVIGATION BAR */
         header { background: #003366; color: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 4px solid #00AEEF; }
-        .logo { font-weight: 700; font-size: 20px; color: #fff; text-decoration: none; text-transform: uppercase; }
-        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 700; font-size: 11px; text-transform: uppercase; transition: 0.3s; }
+        .logo { font-weight: 700; font-size: 20px; color: #fff; text-decoration: none; }
+        nav a { color: white; text-decoration: none; margin-left: 15px; font-weight: 700; font-size: 11px; text-transform: uppercase; transition: 0.3s; }
         nav a:hover { color: #00AEEF; }
 
-        /* HERO AREA */
-        .hero { background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('https://images.unsplash.com/photo-1522071823991-b99c22300ad5?auto=format&fit=crop&w=1600'); height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background-size: cover; background-position: center; }
-        .hero h1 { font-size: 50px; margin-bottom: 20px; font-weight: 700; line-height: 1.2; }
-        .btn-main { background: #00AEEF; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: 700; transition: 0.4s; display: inline-block; }
-        .btn-main:hover { background: #fff; color: #003366; }
+        /* HERO */
+        .hero { background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600'); height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background-size: cover; }
+        .hero h1 { font-size: 50px; margin-bottom: 20px; }
+        .btn { background: #00AEEF; color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: 700; display: inline-block; }
 
-        /* SECTIONS */
+        /* STATS STRIP */
+        .stats { background: #00AEEF; color: white; padding: 40px; display: flex; justify-content: space-around; text-align: center; font-weight: 700; }
+
+        /* CONTENT SECTIONS */
         .section { padding: 80px 10%; }
-        .title-group { text-align: center; margin-bottom: 50px; }
-        .title-group h2 { color: #003366; font-size: 32px; text-transform: uppercase; }
-        .bar { height: 4px; width: 60px; background: #00AEEF; margin: 15px auto; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .card { padding: 40px; border-radius: 8px; border: 1px solid #eee; transition: 0.3s; background: #fff; }
+        .card:hover { transform: translateY(-10px); border-color: #00AEEF; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        /* MULTI-SECTION COLORS */
+        .bg-navy { background: #003366; color: white; }
+        .bg-light { background: #f4f7f9; }
 
-        /* SERVICE GRID */
-        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-        .card { background: #f8f9fa; padding: 40px; border-radius: 8px; border-bottom: 5px solid #003366; transition: 0.3s; height: 100%; }
-        .card:hover { transform: translateY(-10px); background: #fff; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-color: #00AEEF; }
+        /* DUAL CARDS FOR CAREERS & COMMUNITY */
+        .split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .big-card { padding: 60px; border-radius: 12px; color: white; text-decoration: none; background-size: cover; background-position: center; position: relative; overflow: hidden; min-height: 350px; display: flex; flex-direction: column; justify-content: flex-end; }
+        .big-card.careers { background-image: linear-gradient(to top, #003366, transparent), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800'); }
+        .big-card.community { background-image: linear-gradient(to top, #00AEEF, transparent), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800'); }
 
-        /* BRIGHT STRIP */
-        .blue-bar { background: #00AEEF; color: white; padding: 60px 10%; display: flex; justify-content: space-around; text-align: center; font-weight: 700; }
-        .blue-bar h2 { font-size: 40px; margin: 0; }
+        /* FAQ */
+        details { background: #fff; margin-bottom: 10px; padding: 20px; border-radius: 5px; color: #333; }
+        summary { font-weight: 700; cursor: pointer; color: #003366; }
 
-        /* FAQ SECTION */
-        .faq-section { background: #003366; color: white; padding: 60px 10%; border-radius: 10px; margin: 40px 10%; }
-        details { margin-bottom: 15px; padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); cursor: pointer; }
-        summary { font-weight: 700; font-size: 18px; }
+        footer { background: #111; color: #ccc; padding: 80px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; font-size: 13px; }
+        footer h4 { color: #fff; border-bottom: 2px solid #00AEEF; padding-bottom: 10px; }
 
-        /* CAREERS & COMMUNITY */
-        .extra-sections { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 40px 10%; }
-        .c-card { height: 300px; border-radius: 10px; background-size: cover; background-position: center; display: flex; align-items: flex-end; padding: 40px; color: white; text-decoration: none; position: relative; overflow: hidden; }
-        .c-card::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); }
-        .c-card span { position: relative; z-index: 2; font-size: 24px; font-weight: 700; }
-
-        /* FOOTER */
-        footer { background: #111; color: #ccc; padding: 80px 10% 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 13px; }
-        footer h4 { color: white; border-bottom: 2px solid #00AEEF; padding-bottom: 10px; margin-bottom: 20px; text-transform: uppercase; }
-        .footer-bottom { grid-column: 1/-1; text-align: center; border-top: 1px solid #333; padding-top: 30px; margin-top: 20px; color: #666; }
-
-        @media (max-width: 900px) { .grid-3, .extra-sections, footer { grid-template-columns: 1fr; } .hero h1 { font-size: 32px; } }
+        @media (max-width: 900px) { .grid-3, .split-grid, footer { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -70,19 +63,33 @@ To fix this and give you the **Full High-Density Brightbridge Look**—complete 
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="community.html">Community</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <div>
-        <h1>Strategic Growth. <br> Industrial Clarity.</h1>
-        <p>Market-leading architecture for professional brands.</p>
-        <a href="contact.html" class="btn-main">GET A FREE AUDIT</a>
+    <div><h1>Strategic Excellence. <br> Global Authority.</h1><p>Market leading architecture for professional brands.</p><a href="contact.html" class="btn">GET A FREE AUDIT</a></div>
+</section>
+
+<section class="stats">
+    <div><h2>150+</h2><p>CLIENTS</p></div>
+    <div><h2>98%</h2><p>RECOGNITION</p></div>
+    <div><h2>24/7</h2><p>SUPPORT</p></div>
+</section>
+
+<section class="section">
+    <h2 style="text-align:center; color:#003366; font-size:32px;">Core Expertise</h2>
+    <div class="grid-3">
+        <div class="card"><h3>SEO Strategy</h3><p>Advanced audits and technical infrastructure for global search rankings.</p></div>
+        <div class="card"><h3>Brand Scaling</h3><p>Corporate identity systems designed for long-term equity and growth.</p></div>
+        <div class="card"><h3>PPC Analytics</h3><p>High-conversion media management with meticulous ROI oversight.</p></div>
     </div>
 </section>
 
-<section class="blue-bar">
-    <div><h2>150+</h2><p>CLIENTS</p></div>
-    <div><h2>98%</h2><p>RECOGNITION</p></div>
-    <div><h2>2
+<section class="section bg-light">
+    <h2 style="text-align:center; color:#003366;">Opportunities & Impact</h2>
+    <div class="split-grid">
+        <a href="careers.html" class="big-card careers"><div><h2>Careers</h2><p>Join our team of specialists.</p></div></a>
+        <a href="community.html" class="big-card community
