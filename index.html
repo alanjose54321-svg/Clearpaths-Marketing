@@ -3,12 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clear Paths Marketing | Strategic Digital Solutions</title>
+    <title>Clear Paths Marketing | Strategic Growth</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * { box-sizing: border-box; }
-        body { 
-            font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.7; 
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        header { background: #003366; color: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: 700; font-size: 20px; letter-spacing: 1px; }
+        nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: 400; font-size: 14px; transition: 0.3s; }
+        nav a:hover { color: #00AEEF; }
+        
+        .hero { 
+            background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1600'); 
+            height: 75vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; background-size: cover; background-position: center;
         }
-        header { 
-            background: #003366; color: white; padding
+        .hero h1 { font-size: 48px; max-width: 800px; margin-bottom: 20px; }
+        .btn { background: #00AEEF; color: white; padding: 15px 35px; text-decoration: none; border-radius: 4px; font-weight: 700; display: inline-block; }
+
+        .section-title { text-align: center; padding-top: 80px; color: #003366; font-size: 32px; font-weight: 700; }
+        .services-grid { padding: 40px 10% 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .service-card { padding: 40px; border: 1px solid #eee; text-align: center; background: #fff; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .service-card h3 { color: #003366; margin-bottom: 15px; }
+
+        .stats-bar { background: #003366; color: white; padding: 60px 10%; display: flex; justify-content: space-around; text-align: center; }
+        .stats-item h2 { font-size: 40px; margin: 0; }
+        .stats-item p { margin: 0; color: #00AEEF; font-size: 14px; font-weight: 700; }
+
+        .process-section { padding: 80px 10%; background: #f9f9f9; text-align: center; }
+        .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
+        .process-step h3 { color: #00AEEF; font-size: 28px; }
+
+        footer { background: #111; color: #ccc; padding: 60px 10% 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 14px; }
+        .footer-bottom { grid-column: 1 / -1; text-align: center; border-top: 1px solid #333; padding-top: 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CLEAR PATHS MARKETING</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Data-Driven Marketing for the Modern Enterprise</h1>
+            <p>Providing the strategic roadmap and digital clarity your brand needs.</p><br>
+            <a href="contact.html" class="btn">GET YOUR FREE STRATEGY AUDIT</a>
+        </div>
+    </section>
+
+    <h2 class="section-title">Core Marketing Expertise</h2>
+    <section class="services-grid">
+        <div class="service-card">
+            <h3>Digital Branding</h3>
+            <p>We craft visual identities and brand narratives that command attention and build long-term trust.</p>
+        </div>
+        <div class="service-card">
+            <h3>Search Performance</h3>
+            <p>Advanced SEO and SEM strategies designed to capture high-intent traffic and drive growth.</p>
+        </div>
+        <div class="service-card">
+            <h3>Strategic Consulting</h3>
+            <p>Market analysis and business intelligence to help you make informed growth decisions.</p>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stats-item"><h2>150+</h2><p>Projects Completed</p></div>
+        <div class="stats-item"><h2>98%</h2><p>Client Retention</p></div>
+        <div class="stats-item"><h2>10M+</h2><p>Ad Impressions</p></div>
+    </section>
+
+    <section class="process-section">
+        <h2 style="color:#003366">Our Proven Process</h2>
+        <div class="process-grid">
+            <div class="process-step"><h3>01</h3><strong>Discovery</strong></div>
+            <div class="process-step"><h3>02</h3><strong>Strategy</strong></div>
+            <div class="process-step"><h3>03</h3><strong>Execution</strong></div>
+            <div class="process-step"><h3>04</h3><strong>Optimization</strong></div>
+        </div>
+    </section>
+
+    <footer>
+        <div><strong>Clear Paths</strong><p>Leading marketing agency based in Canada.</p></div>
+        <div><strong>Nav</strong><br><a href="index.html" style="color:#ccc">Home</a></div>
+        <div><strong>Expertise</strong><br>SEO Analysis</div>
+        <div><strong>Contact</strong><br>info@clearpathsmarketing.com</div>
+        <div class="footer-bottom">© 2024 Clear Paths Marketing. All Rights Reserved.</div>
+    </footer>
+
+</body>
+</html>
