@@ -2,46 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Clear Paths Marketing | Strategic Global Growth</title>
+    <title>Clear Paths Marketing | Strategic Global Performance</title>
+    <!-- Font Awesome for Industrial Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        *{box-sizing:border-box}body{font-family:'Montserrat',sans-serif;margin:0;padding:0;color:#333;line-height:1.6}
-        header{background:#003366;color:#fff;padding:20px 8%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;border-bottom:4px solid #00AEEF}
-        .logo{font-weight:700;font-size:20px;color:#fff;text-decoration:none}.nav-links a{color:#fff;text-decoration:none;margin-left:20px;font-weight:700;font-size:11px;text-transform:uppercase}
-        .hero{background:linear-gradient(rgba(0,51,102,0.7),rgba(0,51,102,0.7)),url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600');height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background-size:cover}
-        .btn{background:#00AEEF;color:#fff;padding:15px 35px;text-decoration:none;border-radius:50px;font-weight:700;display:inline-block;margin-top:20px}
-        .section{padding:80px 10%}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-        .card{padding:40px;border:1px solid #eee;border-bottom:5px solid #00AEEF;transition:0.3s}.card:hover{transform:translateY(-10px);box-shadow:0 10px 20px rgba(0,0,0,0.1)}
-        .blue-bar{background:#00AEEF;color:#fff;padding:40px;display:flex;justify-content:space-around;text-align:center;font-weight:700}
-        .split{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:40px}
-        .box{padding:60px;border-radius:10px;color:#fff;text-decoration:none;background-size:cover;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end}
-        footer{background:#111;color:#ccc;padding:80px 10% 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;font-size:12px}
-        @media(max-width:900px){.grid,.split,footer{grid-template-columns:1fr}}
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; overflow-x: hidden; }
+        
+        /* THE DYNAMIC NAVIGATION */
+        header { background: #003366; color: #fff; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 4px solid #00AEEF; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .logo { font-weight: 700; font-size: 22px; color: #fff; text-decoration: none; letter-spacing: 1px; }
+        nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover { color: #00AEEF; transform: translateY(-2px); }
+
+        /* THE GLOW HERO */
+        .hero { background: linear-gradient(135deg, rgba(0,51,102,0.85) 0%, rgba(0,34,68,0.9) 100%), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600'); height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; background-size: cover; background-attachment: fixed; }
+        .hero-content h1 { font-size: 55px; margin-bottom: 20px; text-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .btn-glow { background: #00AEEF; color: #fff; padding: 18px 45px; text-decoration: none; border-radius: 50px; font-weight: 700; display: inline-block; box-shadow: 0 0 20px rgba(0,174,239,0.5); }
+        .btn-glow:hover { background: #fff; color: #003366; box-shadow: 0 0 40px rgba(255,255,255,0.6); transform: scale(1.05); }
+
+        /* DIAGONAL SLANT SECTION */
+        .slant { position: relative; padding: 120px 10%; background: #fff; clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%); margin-top: -50px; }
+        .bg-blue-slant { background: #003366; color: #fff; clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%); padding: 120px 10%; }
+
+        /* GLOWING HOVER CARDS */
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
+        .glow-card { background: #fff; padding: 50px 30px; border-radius: 15px; border: 1px solid #eee; text-align: center; position: relative; overflow: hidden; }
+        .glow-card i { font-size: 40px; color: #00AEEF; margin-bottom: 20px; }
+        .glow-card:hover { border-color: #00AEEF; box-shadow: 0 20px 50px rgba(0,51,102,0.15); transform: translateY(-15px); }
+        .glow-card::before { content: ''; position: absolute; top: 0; left: 0; width: 5px; height: 100%; background: #00AEEF; }
+
+        /* STATS STRIP */
+        .stats { display: flex; justify-content: space-around; padding: 60px 10%; background: #00AEEF; color: #fff; text-align: center; }
+        .stats h2 { font-size: 45px; margin: 0; }
+
+        footer { background: #0a0a0a; color: #999; padding: 80px 10% 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; border-top: 10px solid #003366; }
+        footer h4 { color: #fff; text-transform: uppercase; border-bottom: 3px solid #00AEEF; display: inline-block; margin-bottom: 20px; }
+
+        @media (max-width: 900px) { .grid-3, footer { grid-template-columns: 1fr; } .hero-content h1 { font-size: 35px; } }
     </style>
 </head>
 <body>
-<header><a href="index.html" class="logo">CLEAR PATHS MARKETING</a><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div></header>
-<section class="hero"><div><h1>Strategic Growth. Clarity. Authority.</h1><p>Market leading architecture for professional brands.</p><a href="contact.html" class="btn">GET A FREE AUDIT</a></div></section>
-<section class="blue-bar"><div><h2>150+</h2><p>CLIENTS</p></div><div><h2>98%</h2><p>SUCCESS</p></div><div><h2>24/7</h2><p>SUPPORT</p></div></section>
-<section class="section">
-    <h2 style="text-align:center;color:#003366;margin-bottom:40px">Core Expertise & FAQs</h2>
-    <div class="grid">
-        <div class="card"><h3>SEO Audits</h3><p>Technical data oversight for global ranking.</p></div>
-        <div class="card"><h3>Brand Strategy</h3><p>Corporate identity scaling and equity.</p></div>
-        <div class="card"><h3>PPC Analytics</h3><p>Meticulous ROI management and tracking.</p></div>
-        <div class="card"><h3>FAQ: Expertise</h3><p>How we define market leaders.</p></div>
-        <div class="card"><h3>FAQ: Timeline</h3><p>Our 90-day growth roadmap.</p></div>
-        <div class="card"><h3>FAQ: Support</h3><p>Dedicated account architecture.</p></div>
-    </div>
-    <div class="split">
-        <a href="careers.html" class="box" style="background-image:linear-gradient(rgba(0,34,68,0.8),rgba(0,34,68,0.8)),url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500')"><h2>Careers</h2><p>Join our professional team.</p></a>
-        <a href="community.html" class="box" style="background-image:linear-gradient(rgba(0,174,239,0.8),rgba(0,174,239,0.8)),url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500')"><h2>Community</h2><p>Our impact on the ecosystem.</p></a>
+
+<header>
+    <a href="index.html" class="logo">CLEAR PATHS MARKETING</a>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="services.html">SERVICES</a>
+        <a href="industries.html">INDUSTRIES</a>
+        <a href="careers.html">CAREERS</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Global Growth. <br> Precise Performance.</h1>
+        <p>Strategic Architecture for Market Leaders.</p>
+        <a href="contact.html" class="btn-glow">START YOUR FREE AUDIT</a>
     </div>
 </section>
-<footer>
-    <div><h4>OFFICE</h4><p>Toronto, Canada<br>Digital HQ</p></div>
-    <div><h4>RESOURCES</h4><p>Careers<br>Community<br>FAQ</p></div>
-    <div><h4>SOLUTIONS</h4><p>SEO / Branding<br>PPC / Ads</p></div>
-    <div><h4>LEGAL</h4><p>© 2024 Clear Paths.<br>All Rights Reserved.</p></div>
-</footer>
-</body> </html>
+
+<section class="stats">
+    <div><h2>150+</h2><p>CLIENTS</p></div>
+    <div><h2>98%</h2><p>RECOGNITION</p></div>
+    <div><h2>24/7</h2><p>Uptime Monitoring</p></div>
+</section>
+
+<section class="slant">
+    <div style="text-align:center">
+        <h2 style="color:#003366; font-size:36px">Operational Excellence</h2>
+        <div style="height:5px; width:70px; background:#00AEEF; margin:10px auto 40px"></div>
+    </div>
+    <div class="grid-3">
+        <div class="glow-card"><i class="fas fa-chart-line"></i><h3>SEO Growth</h3><p>Advanced technical audits and authority building.</p></div>
+        <div class="glow-card"><i class="fas fa-bullseye"></i><h3>PPC Mastery</h3><p>Precision ROI management across global platforms.</p>
