@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Services | ClearPaths Marketing</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Clear Paths Marketing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; color: #333; }
+        header { background: #003366; color: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-weight: 700; font-size: 20px; letter-spacing: 1px; }
+        nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: 400; font-size: 14px; }
+        
+        .inner-hero { background: #002244; padding: 60px 8%; color: white; text-align: left; }
+        .inner-hero h1 { font-size: 36px; margin: 0; border-left: 5px solid #00AEEF; padding-left: 20px; }
+
+        /* Multi-Page Service Rows */
+        .service-row { display: flex; align-items: center; padding: 80px 8%; gap: 60px; flex-wrap: wrap; }
+        .service-row:nth-child(even) { flex-direction: row-reverse; background: #f9f9f9; }
+        .service-text { flex: 1; min-width: 300px; }
+        .service-img { flex: 1; min-width: 300px; }
+        .service-img img { width: 100%; border-radius: 4px; }
+
+        .service-text h2 { color: #003366; font-size: 28px; margin-bottom: 15px; }
+        .service-text p { line-height: 1.8; color: #555; }
+        .service-list { list-style: none; padding: 0; margin-top: 20px; }
+        .service-list li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .service-list li::before { content: "✔"; color: #00AEEF; position: absolute; left: 0; font-weight: bold; }
+
+        footer { background: #111; color: #ccc; padding: 60px 10% 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 14px; }
+        .footer-bottom { grid-column: 1 / -1; text-align: center; border-top: 1px solid #333; padding-top: 20px; margin-top: 20px; }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="logo">CLEAR PATHS MARKETING</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="services.html">SERVICES</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
 
-<nav>
-    <a href="index.html" class="logo">CLEARPATHS</a>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="community.html">Community</a>
-        <a href="careers.html">Careers</a>
-        <a href="contact.html">Contact</a>
-    </div>
-</nav>
+    <section class="inner-hero">
+        <h1>OUR EXPERTISE</h1>
+    </section>
 
-<header class="hero" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000');">
-    <div class="hero-content">
-        <h1>Comprehensive Growth Systems</h1>
-        <p>Integrated strategy, execution, and measurable performance optimization.</p>
-    </div>
-</header>
-
-<section class="section">
-    <h2 class="section-title">What We Deliver</h2>
-    <div class="grid-3">
-        <div class="card">
-            <h3>Market Positioning</h3>
-            <p>
-                Deep competitor analysis, audience research, and structured
-                brand architecture to dominate your sector.
-            </p>
+    <!-- Service 1 -->
+    <section class="service-row">
+        <div class="service-text">
+            <h2>Search Engine Optimization</h2>
+            <p>Our technical SEO audits and keyword strategies ensure your brand appears exactly where your customers are looking. We focus on sustainable, organic growth that beats the competition.</p>
+            <ul class="service-list">
+                <li>Comprehensive On-Page Audits</li>
+                <li>Strategic Backlink Building</li>
+                <li>Local and Global SEO Optimization</li>
+            </ul>
         </div>
-        <div class="card">
-            <h3>Performance Campaigns</h3>
-            <p>
-                Targeted deployment strategies designed to maximize conversion,
-                retention, and lifetime value.
-            </p>
-        </div>
-        <div class="card">
-            <h3>Operational Alignment</h3>
-            <p>
-                Synchronizing marketing investment with revenue forecasting
-                and long-term corporate objectives.
-            </p>
-        </div>
-    </div>
-</section>
+        <div class="service-img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800" alt="SEO Service"></div>
+    </section>
 
-<section class="section">
-    <h2 class="section-title">Execution Framework</h2>
-    <p>
-        Our structured methodology includes research, strategic planning,
-        tactical deployment, and continuous optimization to ensure
-        scalable profitability.
-    </p>
-</section>
-
-<footer>
-    <div class="footer-grid">
-        <div>
-            <h3>CLEARPATHS</h3>
+    <!-- Service 2 -->
+    <section class="service-row">
+        <div class="service-text">
+            <h2>Brand Identity & Design</h2>
+            <p>We craft visual narratives that tell your story. From logo development to full brand guidelines, we ensure your business projects a professional and trustworthy image.</p>
+            <ul class="service-list">
+                <li>Logo and Visual Design</li>
+                <li>Brand Voice and Messaging</li>
+                <li>UI/UX Strategy</li>
+            </ul>
         </div>
-        <div>
-            <p>marketingclearpaths@gmail.com</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        © 2025 ClearPaths Marketing
-    </div>
-</footer>
+        <div class="service-img"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800" alt="Branding Service"></div>
+    </section>
 
+    <footer>
+        <div><strong>Clear Paths</strong><p>Your partner in marketing growth.</p></div>
+        <div><strong>Navigation</strong><br>Home<br>About Us</div>
+        <div><strong>Expertise</strong><br>SEO Analysis<br>Digital Identity</div>
+        <div><strong>Contact</strong><br>info@clearpathsmarketing.com</div>
+        <div class="footer-bottom">© 2024 Clear Paths Marketing. All Rights Reserved.</div>
+    </footer>
 </body>
 </html>
