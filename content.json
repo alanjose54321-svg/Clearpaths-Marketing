@@ -1,0 +1,339 @@
+{
+  "hero": {
+    "id": "hero-section",
+    "title": "Building Connections That Create Real Impact",
+    "titleId": "hero-title",
+    "description": "ClearPaths Marketing is a face-to-face outreach and field marketing company connecting communities with meaningful charitable and humanitarian initiatives across the Greater Toronto Area.",
+    "descriptionId": "hero-description",
+    "primaryBtnText": "Apply Now",
+    "primaryBtnId": "hero-btn-primary",
+    "secondaryBtnText": "Learn More",
+    "secondaryBtnId": "hero-btn-secondary"
+  },
+  "intro": {
+    "id": "intro-section",
+    "title": "What We Do",
+    "titleId": "intro-title",
+    "description": "At ClearPaths Marketing, we specialize in direct community engagement. Our teams work face-to-face with the public to raise awareness, build trust, and generate long-term support for important causes. We believe genuine human interaction creates stronger connections than digital outreach alone.",
+    "descriptionId": "intro-description",
+    "btnText": "Join Our Team",
+    "btnId": "intro-btn"
+  },
+  "about": {
+    "id": "about-section",
+    "title": "Who We Are",
+    "titleId": "about-title",
+    "description": "ClearPaths Marketing is a community outreach and direct engagement company focused on helping organizations connect with people through meaningful, face-to-face conversations. Our teams represent charitable and humanitarian initiatives by engaging directly with communities, educating the public, and building long-term supporter relationships.",
+    "descriptionId": "about-description",
+    "imageUrl": "assets/aboutus.jpg",
+    "imageId": "about-image",
+    "missionTitle": "Our Mission",
+    "missionTitleId": "mission-title",
+    "missionText": "Our mission is to create positive community impact while developing individuals into confident professionals through hands-on experience, mentorship, and continuous learning.",
+    "missionTextId": "mission-text",
+    "valuesTitle": "Our Values",
+    "valuesTitleId": "values-title",
+    "values": [
+      {
+        "id": "value-1",
+        "title": "Integrity",
+        "description": "Honest and respectful communication in every interaction."
+      },
+      {
+        "id": "value-2",
+        "title": "Growth",
+        "description": "Continuous personal and professional development."
+      },
+      {
+        "id": "value-3",
+        "title": "Impact",
+        "description": "Supporting initiatives that create meaningful change."
+      },
+      {
+        "id": "value-4",
+        "title": "Teamwork",
+        "description": "Success achieved through collaboration and support."
+      }
+    ],
+    "cultureTitle": "Our Culture",
+    "cultureText": "We foster a high-energy, supportive environment where individuals are encouraged to grow at their own pace. Daily coaching, team collaboration, and leadership development are core parts of our culture."
+  },
+  "services": {
+    "id": "services-section",
+    "title": "Our Services",
+    "titleId": "services-title",
+    "description": "We specialize in direct community engagement and face-to-face outreach.",
+    "descriptionId": "services-description",
+    "items": [
+      {
+        "id": "service-item-1",
+        "title": "Face-to-Face Outreach Campaigns",
+        "titleId": "service-1-title",
+        "description": "Our representatives engage directly with communities through residential and public outreach campaigns, creating authentic conversations that build trust and awareness.",
+        "descriptionId": "service-1-description",
+        "imageUrl": "assets/img1.jpg",
+        "imageId": "service-1-image"
+      },
+      {
+        "id": "service-item-2",
+        "title": "Community Engagement",
+        "titleId": "service-2-title",
+        "description": "We help organizations strengthen their presence by connecting directly with local communities through meaningful interactions and education-focused outreach.",
+        "descriptionId": "service-2-description",
+        "imageUrl": "assets/img2.jpg",
+        "imageId": "service-2-image"
+      },
+      {
+        "id": "service-item-3",
+        "title": "Donor & Supporter Acquisition",
+        "titleId": "service-3-title",
+        "description": "Through professional communication and relationship-building, our teams help organizations expand their supporter base and increase long-term engagement.",
+        "descriptionId": "service-3-description",
+        "imageUrl": "assets/img3.jpg",
+        "imageId": "service-3-image"
+      },
+      {
+        "id": "service-item-4",
+        "title": "Brand Awareness Initiatives",
+        "titleId": "service-4-title",
+        "description": "We represent partner organizations in public environments, helping communicate their mission clearly and effectively to new audiences.",
+        "descriptionId": "service-4-description",
+        "imageUrl": "assets/img4.jpg",
+        "imageId": "service-4-image"
+      },
+      {
+        "id": "service-item-5",
+        "title": "Event & Field Marketing",
+        "titleId": "service-5-title",
+        "description": "Our teams participate in community events and outreach activities designed to increase visibility and public engagement.",
+        "descriptionId": "service-5-description",
+        "imageUrl": "assets/img5.jpg",
+        "imageId": "service-5-image"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "titleId": "testimonials-title",
+    "subtitle": "Hear what our clients have to say about working with Clearpaths",
+    "subtitleId": "testimonials-subtitle",
+    "carouselId": "testimonials-carousel",
+    "items": [
+      {
+        "id": "testimonial-1",
+        "quote": "Clearpaths transformed our marketing strategy completely. Their face-to-face approach helped us connect with our donor base in ways we never thought possible.",
+        "role": "Marketing Director",
+        "company": "Hope International",
+        "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=500&fit=crop",
+        "logoUrl": "https://via.placeholder.com/90x45/cccccc/ffffff?text=Hope"
+      },
+      {
+        "id": "testimonial-2",
+        "quote": "Working with Clearpaths was seamless from start to finish. They quickly understood our needs and delivered a solution that exceeded expectations.",
+        "role": "Operations Travel Assistant",
+        "company": "Burges Salmon",
+        "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=500&fit=crop",
+        "logoUrl": "https://via.placeholder.com/90x45/cccccc/ffffff?text=Burges"
+      },
+      {
+        "id": "testimonial-3",
+        "quote": "The team at Clearpaths brought such energy and expertise to our event. Their campaigns resulted in a 40% increase in brand awareness.",
+        "role": "Event Manager",
+        "company": "Medical Relief Foundation",
+        "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=500&fit=crop",
+        "logoUrl": "https://via.placeholder.com/90x45/cccccc/ffffff?text=Medical"
+      },
+      {
+        "id": "testimonial-4",
+        "quote": "Clearpaths doesn't just deliver campaigns, they deliver results. Their understanding of the humanitarian sector is unmatched.",
+        "role": "Communications Lead",
+        "company": "Global Health Alliance",
+        "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=500&fit=crop",
+        "logoUrl": "https://via.placeholder.com/90x45/cccccc/ffffff?text=Global"
+      },
+      {
+        "id": "testimonial-5",
+        "quote": "Professional, creative, and results-driven. Clearpaths is the best agency we've worked with in the non-profit space.",
+        "role": "Executive Director",
+        "company": "Community Care Initiative",
+        "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=500&fit=crop",
+        "logoUrl": "https://via.placeholder.com/90x45/cccccc/ffffff?text=Community"
+      }
+    ]
+  },
+  "careers": {
+    "id": "careers-section",
+    "title": "Join Our Team",
+    "titleId": "careers-title",
+    "description": "ClearPaths Marketing is currently seeking motivated individuals to join our outreach and engagement team. This is a full-time, in-person opportunity combining office training with field outreach activities.",
+    "descriptionId": "careers-description",
+    "dayInRole": "Team members begin their day with training sessions, team meetings, and preparation before participating in community outreach campaigns where they engage directly with members of the public.",
+    "responsibilities": [
+      "Represent partner organizations professionally",
+      "Engage in face-to-face conversations with the public",
+      "Deliver clear and confident campaign presentations",
+      "Build positive community relationships",
+      "Participate in daily training and coaching sessions",
+      "Work toward individual and team performance goals"
+    ],
+    "schedule": "Monday to Friday, 12:30 PM – 8:30 PM | Combination of office and field work",
+    "compensation": "Daily base support when working, plus performance-based commissions. Earnings grow as you gain experience with ClearPaths Marketing.",
+    "salaryBands": [
+      {
+        "id": "band-new",
+        "label": "New Representatives",
+        "range": "$500–$800 / week",
+        "description": "Typical range while you are learning the role and building your first campaigns."
+      },
+      {
+        "id": "band-developing",
+        "label": "Developing Representatives",
+        "range": "$800–$1,200 / week",
+        "description": "For team members who are consistently hitting targets and growing their skills."
+      },
+      {
+        "id": "band-experienced",
+        "label": "Experienced Performers",
+        "range": "$1,000–$1,500+ / week",
+        "description": "Top performers who lead by example and drive strong campaign results."
+      }
+    ],
+    "lookingFor": [
+      "Confident and outgoing",
+      "Strong communicators",
+      "Coachable and eager to learn",
+      "Motivated by growth and performance",
+      "Comfortable working in team environments"
+    ],
+    "growth": "We believe in promoting from within. Team members who demonstrate consistency and leadership potential can progress into training and leadership responsibilities over time.",
+    "applySection": "Submit your application through our online form. Shortlisted candidates will be contacted by our recruitment team to schedule an interview."
+  },
+  "community": {
+    "id": "community-section",
+    "title": "Creating Meaningful Impact",
+    "titleId": "community-title",
+    "engagement": "At ClearPaths Marketing, our work goes beyond marketing — it’s about connecting people with causes that matter. Through face-to-face outreach, our teams help raise awareness and support for humanitarian and nonprofit initiatives that focus on improving lives and strengthening communities. Every conversation contributes to greater awareness and involvement within local communities.",
+    "commitment": "We are committed to ethical outreach practices, respectful communication, and representing our partner organizations with professionalism and integrity."
+  },
+  "contact": {
+    "id": "contact-section",
+    "title": "Get in Touch",
+    "titleId": "contact-title",
+    "email": "marketingclearpaths@gmail.com",
+    "emailId": "contact-email",
+    "emails": [
+      "Contact@Clearpaths.com",
+      "Recruitment@Clearpaths.com"
+    ],
+    "serviceAreas": {
+      "title": "Service Areas",
+      "locations": ["Toronto", "Mississauga", "Brampton", "Etobicoke"]
+    },
+    "cta": {
+      "title": "Ready to start your career with ClearPaths Marketing?",
+      "description": "Apply today and a member of our recruitment team will contact shortlisted candidates."
+    },
+    "locations": [
+      {
+        "id": null,
+        "name": "Ontario",
+        "address": "110 Matheson Blvd West, Mississauga, ON L5R 4G7",
+        "phone": "+1 (289) 277-8693"
+      },
+      {
+        "id": null,
+        "name": "British Columbia",
+        "address": "15350 Croydon Dr. #201, Surrey, BC V3Z-1H4",
+        "phone": "+1 (604) 265-8122"
+      }
+    ]
+  },
+  "faq": {
+    "id": "faq-section",
+    "title": "Frequently Asked Questions",
+    "titleId": "faq-title",
+    "listContainerId": "faq-list",
+    "items": [
+      {
+        "id": "faq-1",
+        "question": "Do I need previous experience?",
+        "answer": "No. Full training and ongoing mentorship are provided."
+      },
+      {
+        "id": "faq-2",
+        "question": "Is this a door-to-door role?",
+        "answer": "The position involves face-to-face outreach and community engagement campaigns conducted in residential and public environments."
+      },
+      {
+        "id": "faq-3",
+        "question": "Is a vehicle required?",
+        "answer": "No vehicle or driver’s license is required."
+      },
+      {
+        "id": "faq-4",
+        "question": "Are there any fees to join?",
+        "answer": "No. Training, materials, and onboarding are provided at no cost."
+      },
+      {
+        "id": "faq-5",
+        "question": "What are the working hours?",
+        "answer": "Monday to Friday, typically from 12:30 PM to 8:30 PM."
+      },
+      {
+        "id": "faq-6",
+        "question": "How does compensation work?",
+        "answer": "Compensation includes daily base support along with performance-based commissions."
+      }
+    ]
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "What we do",
+        "items": [
+          { "label": "Face-to-Face Marketing", "href": "#face-to-face" },
+          { "label": "Brand Awareness", "href": "#brand-awareness" },
+          { "label": "Event Management", "href": "#event-management" },
+          { "label": "Digital Marketing", "href": "#digital-marketing" }
+        ]
+      },
+      {
+        "title": "Our Services",
+        "items": [
+          { "label": "Campaign Management", "href": "index.html#services" },
+          { "label": "Marketing Strategy", "href": "index.html#services" },
+          { "label": "Client Relations", "href": "index.html#services" },
+          { "label": "Brand Development", "href": "index.html#services" }
+        ]
+      },
+      {
+        "title": "Specialist Sectors",
+        "items": [
+          { "label": "Humanitarian Organizations", "href": "index.html#about" },
+          { "label": "Charities", "href": "index.html#about" },
+          { "label": "Medical Community", "href": "index.html#about" },
+          { "label": "Non-Profit Sector", "href": "index.html#about" }
+        ]
+      },
+      {
+        "title": "More Info",
+        "items": [
+          { "label": "About", "href": "index.html#about" }
+        ]
+      },
+      {
+        "title": "Get Started",
+        "items": [
+          { "label": "Contact", "href": "index.html#contact" }
+        ]
+      }
+    ],
+    "contactTitle": "Contact",
+    "bottomText": "© 2025 Clearpaths Canada. All rights reserved.",
+    "bottomLinks": [
+      { "label": "Privacy Policy", "href": "#privacy" },
+      { "label": "Terms of Service", "href": "#terms" },
+      { "label": "Cookie Settings", "href": "#cookies" }
+    ]
+  }
+}

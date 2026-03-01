@@ -1,68 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Clear Paths | Strategic Advocacy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root { --navy: #0a192f; --slate: #112240; --blue: #00AEEF; --white: #e6f1ff; }
-        * { box-sizing: border-box; transition: 0.3s; }
-        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: var(--navy); color: #8892b0; line-height: 1.6; }
-        header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--blue); }
-        .logo { font-weight: 800; font-size: 16px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
-        #menu-toggle { display: none; }
-        .hamburger { display: none; cursor: pointer; color: var(--white); font-size: 24px; }
-        nav { display: flex; }
-        nav a { color: var(--white); text-decoration: none; margin-left: 15px; font-size: 10px; font-weight: 700; text-transform: uppercase; }
-        @media (max-width: 900px) {
-            .hamburger { display: block; }
-            nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--navy); flex-direction: column; padding: 20px; border-bottom: 2px solid var(--blue); }
-            nav a { margin: 12px 0; font-size: 13px; text-align: center; }
-            #menu-toggle:checked ~ nav { display: flex; }
-            .grid, .block-grid, footer { grid-template-columns: 1fr !important; }
-            .hero h1 { font-size: 32px !important; }
-        }
-        .hero { height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; background: linear-gradient(rgba(10,25,47,0.85), rgba(10,25,47,0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format'); background-size: cover; }
-        .hero h1 { font-size: 48px; color: var(--white); font-weight: 800; }
-        .data-bar { background: #020c1b; padding: 40px; display: flex; justify-content: space-around; text-align: center; border-bottom: 1px solid var(--slate); }
-        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 60px 10%; }
-        .card { background: var(--slate); padding: 30px; border-radius: 4px; border-bottom: 3px solid var(--blue); text-align: center; }
-        .block-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 0 10% 60px; }
-        .block { height: 220px; border-radius: 4px; display: flex; align-items: flex-end; padding: 20px; text-decoration: none; background-size: cover; position: relative; overflow: hidden; }
-        .block::after { content: ''; position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to top, rgba(10,25,47,0.9), transparent); }
-        .block span { position: relative; z-index: 2; color: var(--white); font-weight: 800; font-size: 20px; }
-        footer { background: #020c1b; padding: 60px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; font-size: 11px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Clearpaths Canada</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script defer src="scripts.js"></script>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=800&fit=crop"/>
+  <link rel="preload" as="video" href="https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4"/>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=500&fit=crop"/>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=500&fit=crop"/>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=500&fit=crop"/>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=500&fit=crop"/>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=500&fit=crop"/>
 </head>
+
 <body>
-<header>
-    <a href="index.html" class="logo">CLEAR PATHS /</a>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
-    <nav>
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
-        <a href="careers.html">Careers</a><a href="community.html">Community</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
-    </nav>
-</header>
-<section class="hero">
-    <div><h1>Strategic Advocacy.</h1><p>Donor Acquisition for Hospital Foundations</p></div>
-</section>
-<div class="data-bar">
-    <div><h2 style="color:var(--blue)">150+</h2><p style="font-size:10px">CAMPAIGNS</p></div>
-    <div><h2 style="color:var(--blue)">98%</h2><p style="font-size:10px">RETENTION</p></div>
-</div>
-<section class="grid">
-    <div class="card"><h3>Hospital Foundations</h3><p>Professional representation.</p></div>
-    <div class="card"><h3>Acquisition</h3><p>Long-term sustainer funding.</p></div>
-    <div class="card"><h3>Field Marketing</h3><p>Human-centric engagement.</p></div>
-</section>
-<div class="block-grid">
-    <a href="careers.html" class="block" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600')"><span>Careers</span></a>
-    <a href="community.html" class="block" style="background-image:url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600')"><span>Community</span></a>
-</div>
-<footer>
-    <div><h4 style="color:white">Agency</h4><p>Toronto, Ontario</p></div>
-    <div><h4 style="color:white">Links</h4><a href="faq.html" style="color:#8892b0;text-decoration:none">FAQ</a><br><a href="careers.html" style="color:#8892b0;text-decoration:none">Careers</a></div>
-    <div><h4 style="color:white">Legal</h4><p>© 2024 Clear Paths</p></div>
-    <div><h4 style="color:white">Talk
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html#home"><img src="assets/logo.png" alt="logo"></a>
+    <button type="button" class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#community">Mission</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu-overlay" id="menu-overlay"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline>
+      <source src="https://videos.pexels.com/video-files/6527135/6527135-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1 id="hero-title">Connecting Brands With People</h1>
+      <p id="hero-description">We create impactful marketing campaigns that build trust and lasting relationships.</p>
+      <button class="btn secondary" id="hero-btn-primary">Get Started</button>
+      <button class="btn outline" id="hero-btn-secondary">Learn More</button>
+    </div>
+  </section>
+  <!-- STATS -->
+  <section class="stats fade">
+    <div>
+      <h2>25+</h2>
+      <p>Years Experience</p>
+    </div>
+    <div>
+      <h2>100+</h2>
+      <p>Clients</p>
+    </div>
+    <div>
+      <h2>500+</h2>
+      <p>Campaigns</p>
+    </div>
+  </section>
+
+  <!-- INTRO & ABOUT COMBINED SECTION -->
+  <section class="intro-about-section" id="about">
+    <div class="intro-about-content">
+      <div class="intro-about-text">
+        <h2 id="intro-title">
+          Your Trusted Marketing<br>
+          Agency in <strong>Ontario &<br>British Columbia</strong>
+        </h2>
+
+        <p id="intro-description">
+          We are a dedicated marketing agency specializing in face-to-face marketing and brand awareness for humanitarian organizations, charities, and the medical community, backed by over 25 years of collective experience.
+        </p>
+
+        <div class="about-box">
+          <h3 id="about-title">About Us</h3>
+          <p id="about-description">We are a results-driven agency helping brands grow with innovative marketing strategies and meaningful customer engagement.</p>
+        </div>
+
+        <button class="intro-btn" id="intro-btn"><span>Contact</span></button>
+      </div>
+
+      <div class="intro-about-image">
+        <img id="about-image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=800&fit=crop" alt="About Clearpaths" />
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="services-scroll-section" id="services">
+    <div class="services-scroll-container" id="services-container">
+     
+    </div>
+
+    <div class="service-dots" id="service-dots"></div>
+  </section> -->
+
+
+
+
+  <!-- PREMIUM SERVICES SCROLL SECTION -->
+  <span id="services"></span>
+  <div class="services-premium-wrapper" id="services-premium-wrapper">
+    <div class="services-premium-section">
+      <!-- Left: Service Title & Description -->
+      <div class="services-premium-text">
+        <h2 class="services-premium-title" id="services-premium-title">
+          Face-to-Face Marketing
+        </h2>
+        <p class="services-premium-description" id="services-premium-description">Engaging strategies that connect brands directly with audiences, fostering meaningful interactions and relationships.</p>
+      </div>
+
+      <!-- Right: Image Stack Container -->
+      <div class="services-premium-images">
+        <div class="services-premium-track" id="services-premium-track">
+          <!-- Images will be loaded from JSON here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <!-- <section class="testimonials-section">
+    <div class="testimonials-header">
+      <h2 id="testimonials-title">Client Testimonials</h2>
+      <p id="testimonials-subtitle">Hear what our clients have to say about working with Clearpaths</p>
+    </div>
+    
+    <div class="testimonials-container">
+      <div class="testimonials-carousel" id="testimonials-carousel">
+      </div>
+
+      <div class="testimonials-nav">
+        <button class="nav-btn prev" id="testimonials-prev">←</button>
+        <button class="nav-btn next" id="testimonials-next">→</button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CLIENTS / TRUSTED BY SECTION -->
+  <!-- <section class="clients-section">
+    <h2>Proud to be trusted by:</h2>
+    <div class="clients-grid">
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="NHS" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="John Lewis" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="Helix Energy" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="DHL" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="SSE" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="L&G" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="Royal Mail" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="M&S" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="Burges Salmon" />
+      </div>
+      <div class="client-logo">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=80&fit=crop" alt="TLT" />
+      </div>
+    </div>
+  </section> -->
+
+  <!-- LET'S TALK CTA / CONTACT SECTION -->
+  <section class="lets-talk-section" id="contact">
+    <div class="lets-talk-content">
+      <h2>Let's talk</h2>
+      <p>Interested to know more? Just fill out our quick form and we'll be in touch. No pressure, no hassle, just good, honest conversation.</p>
+
+      <form class="lets-talk-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="talk-name">Name*</label>
+            <input id="talk-name" type="text" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="talk-company">Company*</label>
+            <input id="talk-company" type="text" placeholder="Your company name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="talk-phone">Phone*</label>
+            <input id="talk-phone" type="tel" placeholder="Your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="talk-email">Email*</label>
+            <input id="talk-email" type="email" placeholder="Your email address" required>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="talk-message">Message</label>
+          <textarea id="talk-message" placeholder="Tell us more about your inquiry..."></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CAREERS SECTION -->
+  <!-- Moved to separate careers.html page -->
+
+  <!-- COMMUNITY SECTION -->
+  <section class="impact-banner" id="community">
+    <div class="impact-banner-inner">
+      <div class="impact-banner-content">
+        <h2 id="community-title">Creating Meaningful Impact</h2>
+        <p id="community-engagement"></p>
+        <a href="careers.html"><button type="button" class="impact-banner-btn">Join our mission</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES / MISSION / CULTURE SECTION -->
+  <section class="careers-section" id="values">
+    <div class="careers-container">
+      <div class="careers-section-block" id="values1">
+        <div class="career-section-header text-center">
+          <h2>Our Mission, Values &amp; Culture</h2>
+        </div>
+        <div class="careers-grid values">
+          <div class="culture-card">
+            <div class="culture-card-image culture-card-image--mission"></div>
+            <div class="culture-card-body">
+              <h3 id="values-mission-title">Our Mission</h3>
+              <p id="values-mission-text" class="culture-text"></p>
+              <div class="culture-card-footer">
+                <span class="culture-index">01/03</span>
+              </div>
+            </div>
+          </div>
+          <div class="culture-card">
+            <div class="culture-card-image culture-card-image--values"></div>
+            <div class="culture-card-body">
+              <h3>Our Values</h3>
+              <p id="values-values-text" class="culture-text"></p>
+              <div class="culture-card-footer">
+                <span class="culture-index">02/03</span>
+              </div>
+            </div>
+          </div>
+          <div class="culture-card">
+            <div class="culture-card-image culture-card-image--culture"></div>
+            <div class="culture-card-body">
+              <h3>Our Culture</h3>
+              <p id="values-culture-text" class="culture-text"></p>
+              <div class="culture-card-footer">
+                <span class="culture-index">03/03</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section" id="faq">
+    <div class="faq-container">
+      <div class="faq-header">
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list" id="faq-list">
+        <!-- FAQ items will be loaded from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>What we do</h3>
+        <ul>
+          <li><a href="#face-to-face">Face-to-Face Marketing</a></li>
+          <li><a href="#brand-awareness">Brand Awareness</a></li>
+          <li><a href="#event-management">Event Management</a></li>
+          <li><a href="#digital-marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="#services">Campaign Management</a></li>
+          <li><a href="#services">Marketing Strategy</a></li>
+          <li><a href="#services">Client Relations</a></li>
+          <li><a href="#services">Brand Development</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Specialist Sectors</h3>
+        <ul>
+          <li><a href="#about">Humanitarian Organizations</a></li>
+          <li><a href="#about">Charities</a></li>
+          <li><a href="#about">Medical Community</a></li>
+          <li><a href="#about">Non-Profit Sector</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>More Info</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#resources">Resource Hub</a></li>
+          <li><a href="#blog">Blog</a></li> -->
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#book-demo">Book a Demo</a></li> -->
+          <!-- <li><a href="#login">Login</a></li> -->
+          <!-- <li><a href="#pricing">Pricing</a></li> -->
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul id="footer-contact-locations">
+          <!-- Locations will be rendered from content.json -->
+        </ul>
+        <ul id="footer-contact-emails" class="footer-contact-emails">
+          <!-- Emails will be rendered from content.json -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Clearpaths Canada. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#cookies">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+<!-- <script>
+  const faders = document.querySelectorAll(".fade");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  faders.forEach(el => observer.observe(el));
+</script>
+<script>
+  const nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 60) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+
+</script> -->
+
+</html>

@@ -1,59 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Careers | Clear Paths</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root { --navy: #0a192f; --slate: #112240; --blue: #00AEEF; --white: #e6f1ff; }
-        * { box-sizing: border-box; transition: 0.3s; }
-        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: var(--navy); color: #8892b0; line-height: 1.6; }
-        header { background: rgba(10, 25, 47, 0.95); backdrop-filter: blur(10px); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--blue); }
-        .logo { font-weight: 800; font-size: 16px; color: var(--white); text-decoration: none; letter-spacing: 2px; }
-        #menu-toggle { display: none; }
-        .hamburger { display: block; cursor: pointer; color: var(--white); font-size: 24px; }
-        nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--navy); flex-direction: column; padding: 20px; border-bottom: 2px solid var(--blue); }
-        nav a { color: var(--white); text-decoration: none; margin: 12px 0; font-size: 13px; font-weight: 700; text-transform: uppercase; text-align: center; }
-        #menu-toggle:checked ~ nav { display: flex; }
-        .inner-hero { padding: 60px 10%; background: #020c1b; text-align: center; border-bottom: 1px solid var(--slate); }
-        .inner-hero h1 { color: var(--white); font-size: 28px; letter-spacing: 2px; }
-        .job-section { padding: 40px 10%; }
-        .job-card { background: var(--slate); padding: 30px; border-radius: 4px; border-left: 4px solid var(--blue); margin-bottom: 20px; }
-        .job-card h3 { color: var(--white); margin: 0 0 10px 0; font-size: 18px; }
-        .tag { color: var(--blue); font-size: 11px; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 5px; }
-        .cta-bar { background: var(--blue); color: #fff; padding: 40px 10%; text-align: center; }
-        .btn-white { display: inline-block; background: #fff; color: var(--navy); padding: 12px 30px; text-decoration: none; font-weight: 800; border-radius: 2px; margin-top: 20px; }
-        footer { background: #020c1b; padding: 30px 10%; text-align: center; font-size: 11px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | Clearpaths Canada</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script defer src="scripts.js"></script>
+
 </head>
+
 <body>
-<header>
-    <a href="index.html" class="logo">CLEAR PATHS /</a>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
-    <nav>
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
-        <a href="careers.html">Careers</a><a href="community.html">Community</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
-    </nav>
-</header>
-<section class="inner-hero"><h1>CAREERS</h1></section>
-<section class="job-section">
-    <div class="job-card">
-        <span class="tag">Leadership</span>
-        <h3>Brand Advocate</h3>
-        <p>Represent Canada's leading hospital foundations through professional face-to-face advocacy.</p>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html#home"><img src="assets/logo.png" alt="logo"></a>
+
+    <button type="button" class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="nav-menu">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu-overlay" id="menu-overlay"></div>
+
+  <!-- CAREERS SECTION -->
+  <section class="careers-section" id="careers">
+    <div class="careers-container">
+      <div class="careers-hero">
+        <h1 id="careers-title"></h1>
+        <p id="careers-description" class="careers-intro"></p>
+      </div>
+
+      <div class="careers-grid">
+        <!-- Day in the Role -->
+        <div class="career-card">
+          <div class="career-card-icon">📅</div>
+          <h3>A Day in the Role</h3>
+          <p id="careers-dayInRole"></p>
+        </div>
+
+        <!-- Schedule -->
+        <div class="career-card">
+          <div class="career-card-icon">⏰</div>
+          <h3>Schedule & Location</h3>
+          <p id="careers-schedule"></p>
+        </div>
+
+        <!-- Compensation -->
+        <div class="career-card career-card--compensation">
+          <div class="career-card-icon">💰</div>
+          <h3>Compensation & Growth</h3>
+          <p id="careers-compensation" class="career-compensation-summary"></p>
+          <div class="salary-band-grid" id="careers-salary-bands">
+            <!-- Salary bands will be rendered from content.json -->
+          </div>
+        </div>
+      </div>
+
+      <div class="careers-two-col">
+        <!-- Responsibilities Section -->
+        <div class="careers-section-block">
+          <div class="career-section-header">
+            <h2>✓ Your Responsibilities</h2>
+          </div>
+          <ul id="careers-responsibilities" class="careers-list"></ul>
+        </div>
+
+        <!-- Looking For Section -->
+        <div class="careers-section-block">
+          <div class="career-section-header">
+            <h2>👥 We're Looking For</h2>
+          </div>
+          <ul id="careers-lookingFor" class="careers-list"></ul>
+        </div>
+      </div>
+
+      <!-- Growth Section -->
+      <div class="careers-section-block">
+        <div class="career-section-header">
+          <h2>🚀 Growth & Development</h2>
+        </div>
+        <p id="careers-growth" class="growth-text"></p>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="careers-cta">
+        <a href="mailto:Recruitment@Clearpaths.com?subject=Career%20Inquiry" class="cta-button">Apply Now</a>
+      </div>
     </div>
-    <div class="job-card">
-        <span class="tag">Mentorship</span>
-        <h3>Field Manager</h3>
-        <p>Develop leadership skills while overseeing strategic donor acquisition campaigns.</p>
+  </section>
+
+
+  <!-- CTA -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>What we do</h3>
+        <ul>
+          <li><a href="index.html#services">Face-to-Face Marketing</a></li>
+          <li><a href="#brand-awareness">Brand Awareness</a></li>
+          <li><a href="#event-management">Event Management</a></li>
+          <li><a href="#digital-marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="#services">Campaign Management</a></li>
+          <li><a href="#services">Marketing Strategy</a></li>
+          <li><a href="#services">Client Relations</a></li>
+          <li><a href="#services">Brand Development</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Specialist Sectors</h3>
+        <ul>
+          <li><a href="#about">Humanitarian Organizations</a></li>
+          <li><a href="#about">Charities</a></li>
+          <li><a href="#about">Medical Community</a></li>
+          <li><a href="#about">Non-Profit Sector</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>More Info</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#resources">Resource Hub</a></li>
+          <li><a href="#blog">Blog</a></li> -->
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Get Started</h3>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#book-demo">Book a Demo</a></li> -->
+          <!-- <li><a href="#login">Login</a></li> -->
+          <!-- <li><a href="#pricing">Pricing</a></li> -->
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul id="footer-contact-locations">
+          <!-- Locations will be rendered from content.json -->
+        </ul>
+        <ul id="footer-contact-emails" class="footer-contact-emails">
+          <!-- Emails will be rendered from content.json -->
+        </ul>
+      </div>
     </div>
-</section>
-<section class="cta-bar">
-    <h2>Ready to grow?</h2>
-    <a href="mailto:info@clearpathsmarketing.com" class="btn-white">SEND RESUME</a>
-</section>
-<footer><p>© 2024 Clear Paths Marketing</p></footer>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Clearpaths Canada. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#cookies">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
