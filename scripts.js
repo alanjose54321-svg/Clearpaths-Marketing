@@ -199,43 +199,16 @@ function populateContent() {
     }
   }
 
-  // Populate Services Section
+  // Populate Services Section - Title and Description only
+  // Cards will be generated in initPremiumServicesSection()
   if (contentData.services) {
     const servicesTitle = document.getElementById(contentData.services.titleId);
     const servicesDesc = document.getElementById(contentData.services.descriptionId);
-    const servicesContainer = document.getElementById('services-container');
     
-    console.log('Services container element:', servicesContainer);
-    console.log('Service items to loop:', contentData.services.items);
+    console.log('Populating services header');
     
     if (servicesTitle) servicesTitle.textContent = contentData.services.title;
     if (servicesDesc) servicesDesc.textContent = contentData.services.description;
-
-    // Generate Service Items from JSON
-    if (servicesContainer && contentData.services.items) {
-      console.log('Generating services from JSON, count:', contentData.services.items.length);
-      servicesContainer.innerHTML = ''; // Clear existing items
-      
-      contentData.services.items.forEach((item, index) => {
-        console.log('Processing service item', index + 1, ':', item.title);
-        const serviceHTML = `
-          <div class="service-slide">
-            <div class="service-image-container">
-              <img src="${item.imageUrl}" alt="${item.title}" />
-            </div>
-            <div class="service-content">
-              <h2>${item.title}</h2>
-              <p>${item.description}</p>
-              <a href="#" class="service-btn">Learn More</a>
-            </div>
-          </div>
-        `;
-        servicesContainer.insertAdjacentHTML('beforeend', serviceHTML);
-      });
-      console.log('All service items loaded. Total:', contentData.services.items.length);
-    } else {
-      console.log('Services container or items not found');
-    }
   }
 
   // Populate Testimonials Section
@@ -734,14 +707,14 @@ function initFAQAccordion() {
 
 // Initialize Premium Services Section
 function initPremiumServicesSection() {
-  console.log('initPremiumServicesSection called');
+  console.log('initPremiumServicesSection called - loading horizontal scroll services');
   
-  const wrapper = document.getElementById('services-premium-wrapper');
-  const track = document.getElementById('services-premium-track');
-  const titleElement = document.getElementById('services-premium-title');
-  const descriptionElement = document.getElementById('services-premium-description');
+  const track = document.getElementById('services-track');
+  const container = document.querySelector('.services-container');
+  const prevBtn = document.getElementById('services-prev');
+  const nextBtn = document.getElementById('services-next');
 
-  if (!wrapper || !track || !titleElement || !descriptionElement || !contentData.services) {
+  if (!track || !contentData.services) {
     console.log('Missing required elements or data');
     return;
   }
@@ -749,101 +722,113 @@ function initPremiumServicesSection() {
   const services = contentData.services.items;
   if (services.length === 0) return;
 
-  console.log('Loading', services.length, 'services into premium section');
+  console.log('Loading', services.length, 'services into horizontal scroll section');
 
-  // Create image items
+  // Clear existing content
+  track.innerHTML = '';
+
+  // Create service cards
   services.forEach((service) => {
-    const imageItem = document.createElement('div');
-    imageItem.className = 'services-premium-image-item';
-    imageItem.innerHTML = `<img src="${service.imageUrl}" alt="${service.title}" />`;
-    track.appendChild(imageItem);
+    const card = document.createElement('div');
+    card.className = 'service-card';
+    card.innerHTML = `
+      <div class="service-card-image">
+        <img src="${service.imageUrl}" alt="${service.title}" />
+      </div>
+      <div class="service-card-content">
+        <h3>${service.title}</h3>
+        <p>${service.description}</p>
+      </div>
+    `;
+    track.appendChild(card);
   });
 
-  // Constants
-  const total = services.length;
-  const gap = 80; // Must match CSS margin-bottom
-  const viewport = window.innerHeight;
-  const isMobile = window.innerWidth < 900;
+  // Add navigation button functionality
+  if (prevBtn && nextBtn && container) {
+    const scrollAmount = 380 + 40; // card width + gap
 
-  if (!isMobile) {
-    // DESKTOP: Scroll-driven animation
-    wrapper.style.height = (total * viewport + (total - 1) * gap) + 'px';
+    // Function to update button states
+    const updateButtonStates = () => {
+      const isAtStart = container.scrollLeft <= 0;
+      const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 10; // 10px tolerance
 
-    // Scroll handler
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      const wrapperTop = wrapper.offsetTop;
-      let progress = scrollY - wrapperTop;
+      prevBtn.disabled = isAtStart;
+      nextBtn.disabled = isAtEnd;
+    };
 
-      if (progress >= 0 && progress <= wrapper.offsetHeight - viewport) {
-        // Move images naturally with gap included
-        track.style.transform = `translateY(-${progress}px)`;
+    // Initial button state
+    updateButtonStates();
 
-        // Detect current index
-        let index = Math.floor(progress / (viewport + gap));
-        if (index >= total) index = total - 1;
+    // Update button states on scroll
+    container.addEventListener('scroll', updateButtonStates);
 
-        titleElement.textContent = services[index].title;
-        descriptionElement.textContent = services[index].description;
-      }
-    });
-  } else {
-    // MOBILE: Carousel - show 1 service at a time
-    let currentIndex = 0;
-    
-    // Update display to show current service
-    function showService(index) {
-      track.style.transform = `translateX(-${index * 100}%)`;
-      titleElement.textContent = services[index].title;
-      descriptionElement.textContent = services[index].description;
-    }
-    
-    showService(0);
-    
-    // Add navigation buttons
-    const mobileNav = document.createElement('div');
-    mobileNav.className = 'services-mobile-nav';
-    mobileNav.innerHTML = `
-      <button class="services-nav-prev" id="services-prev">←</button>
-      <div class="services-dots" id="services-dots"></div>
-      <button class="services-nav-next" id="services-next">→</button>
-    `;
-    wrapper.appendChild(mobileNav);
-    
-    // Create dots
-    const dotsContainer = document.getElementById('services-dots');
-    services.forEach((_, i) => {
-      const dot = document.createElement('button');
-      dot.className = 'services-dot' + (i === 0 ? ' active' : '');
-      dot.addEventListener('click', () => {
-        currentIndex = i;
-        showService(currentIndex);
-        updateDots();
+    // Prev button click
+    prevBtn.addEventListener('click', () => {
+      container.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
       });
-      dotsContainer.appendChild(dot);
+      setTimeout(updateButtonStates, 50);
     });
-    
-    function updateDots() {
-      document.querySelectorAll('.services-dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentIndex);
+
+    // Next button click
+    nextBtn.addEventListener('click', () => {
+      container.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
       });
-    }
-    
-    // Previous button
-    document.getElementById('services-prev').addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + total) % total;
-      showService(currentIndex);
-      updateDots();
-    });
-    
-    // Next button
-    document.getElementById('services-next').addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % total;
-      showService(currentIndex);
-      updateDots();
+      setTimeout(updateButtonStates, 50);
     });
   }
 
-  console.log('Premium services section initialized');
+  // Add swipe/drag support only on desktop (not on mobile)
+  if (container && window.innerWidth > 480) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // Mouse events
+    container.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - container.offsetLeft;
+      scrollLeft = container.scrollLeft;
+      container.style.cursor = 'grabbing';
+    });
+
+    container.addEventListener('mouseleave', () => {
+      isDown = false;
+      container.style.cursor = 'grab';
+    });
+
+    container.addEventListener('mouseup', () => {
+      isDown = false;
+      container.style.cursor = 'grab';
+    });
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - container.offsetLeft;
+      const walk = (x - startX) * 1;
+      container.scrollLeft = scrollLeft - walk;
+    });
+
+    // Touch events for tablets/large devices with horizontal scroll
+    let touchStartX = 0;
+    let touchScrollLeft = 0;
+
+    container.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].pageX - container.offsetLeft;
+      touchScrollLeft = container.scrollLeft;
+    });
+
+    container.addEventListener('touchmove', (e) => {
+      const touchX = e.touches[0].pageX - container.offsetLeft;
+      const walk = (touchX - touchStartX) * 1;
+      container.scrollLeft = touchScrollLeft - walk;
+    });
+  }
+
+  console.log('Services section initialized with navigation buttons');
 }
 
