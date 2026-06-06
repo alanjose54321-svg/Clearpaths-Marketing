@@ -13,7 +13,7 @@ if (-not (Test-Path -Path .\img)) {
 
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 
-# List of image files the site uses that we'll replace (logo.png kept unchanged).
+# List of image files the site uses that we'll replace (logo2.png kept unchanged).
 $targets = @(
   "img/hero.jpg",
   "img/team.jpg",
@@ -76,4 +76,4 @@ Write-Output "Backups are available as *.bak.$timestamp in the img/ folder."
 Write-Output ""
 Write-Output "Notes:"
 Write-Output " - These Unsplash queries return a fresh image per download. If you prefer a specific image, provide a local path or a direct image URL and I will give the exact copy command."
-Write-Output " - I did NOT overwrite logo.png. If you want to replace the logo as well, run the extra command at the end of these instructions."
+Write-Output " - I did NOT overwrite logo2.png. If you want to replace the logo as well, run the extra command at the end of these instructions."
