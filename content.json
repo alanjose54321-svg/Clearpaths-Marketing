@@ -3,7 +3,7 @@
     "id": "hero-section",
     "title": "Building Connections That Create Real Impact",
     "titleId": "hero-title",
-    "description": "ClearPaths Marketing is a face-to-face outreach and field marketing company connecting communities with meaningful charitable and humanitarian initiatives across the Greater Toronto Area.",
+    "description": "Strativo is a field-marketing agency that connects communities with charitable and humanitarian initiatives across the Greater Toronto Area through in-person engagement.",
     "descriptionId": "hero-description",
     "primaryBtnText": "Apply Now",
     "primaryBtnId": "hero-btn-primary",
@@ -14,7 +14,7 @@
     "id": "intro-section",
     "title": "What We Do",
     "titleId": "intro-title",
-    "description": "At ClearPaths Marketing, we specialize in direct community engagement. Our teams work face-to-face with the public to raise awareness, build trust, and generate long-term support for important causes. We believe genuine human interaction creates stronger connections than digital outreach alone.",
+    "description": "At Strativo we specialise in direct community engagement — our teams speak face-to-face to build awareness, trust and long-term support.",
     "descriptionId": "intro-description",
     "btnText": "Join Our Team",
     "btnId": "intro-btn"
@@ -23,13 +23,13 @@
     "id": "about-section",
     "title": "Who We Are",
     "titleId": "about-title",
-    "description": "ClearPaths Marketing is a community outreach and direct engagement company focused on helping organizations connect with people through meaningful, face-to-face conversations. Our teams represent charitable and humanitarian initiatives by engaging directly with communities, educating the public, and building long-term supporter relationships.",
+    "description": "Strativo delivers community outreach and in-person engagement to help organisations connect meaningfully with people. Our teams represent partners professionally and drive measurable results.",
     "descriptionId": "about-description",
     "imageUrl": "assets/aboutus.jpg",
     "imageId": "about-image",
     "missionTitle": "Our Mission",
     "missionTitleId": "mission-title",
-    "missionText": "Our mission is to create positive community impact while developing individuals into confident professionals through hands-on experience, mentorship, and continuous learning.",
+    "missionText": "Create lasting community impact while developing confident professionals with hands-on training, mentorship and continual learning.",
     "missionTextId": "mission-text",
     "valuesTitle": "Our Values",
     "valuesTitleId": "values-title",
@@ -62,14 +62,14 @@
     "id": "services-section",
     "title": "Our Services",
     "titleId": "services-title",
-    "description": "We specialize in direct community engagement and face-to-face outreach.",
+    "description": "Practical, data-informed services focused on in-person engagement and community outreach.",
     "descriptionId": "services-description",
     "items": [
       {
         "id": "service-item-1",
         "title": "Face-to-Face Outreach Campaigns",
         "titleId": "service-1-title",
-        "description": "Our representatives engage directly with communities through residential and public outreach campaigns, creating authentic conversations that build trust and awareness.",
+        "description": "We run residential and public outreach campaigns that spark authentic conversations and build trust.",
         "descriptionId": "service-1-description",
         "imageUrl": "assets/img1.jpg",
         "imageId": "service-1-image"
@@ -78,7 +78,7 @@
         "id": "service-item-2",
         "title": "Community Engagement",
         "titleId": "service-2-title",
-        "description": "We help organizations strengthen their presence by connecting directly with local communities through meaningful interactions and education-focused outreach.",
+        "description": "We strengthen local presence by facilitating meaningful, education-focused interactions with communities.",
         "descriptionId": "service-2-description",
         "imageUrl": "assets/img2.jpg",
         "imageId": "service-2-image"
@@ -87,7 +87,7 @@
         "id": "service-item-3",
         "title": "Donor & Supporter Acquisition",
         "titleId": "service-3-title",
-        "description": "Through professional communication and relationship-building, our teams help organizations expand their supporter base and increase long-term engagement.",
+        "description": "We expand supporter bases through professional conversations and relationship-building.",
         "descriptionId": "service-3-description",
         "imageUrl": "assets/img3.jpg",
         "imageId": "service-3-image"
@@ -96,7 +96,7 @@
         "id": "service-item-4",
         "title": "Brand Awareness Initiatives",
         "titleId": "service-4-title",
-        "description": "We represent partner organizations in public environments, helping communicate their mission clearly and effectively to new audiences.",
+        "description": "We represent partner organisations in public settings, communicating missions clearly to new audiences.",
         "descriptionId": "service-4-description",
         "imageUrl": "assets/img4.jpg",
         "imageId": "service-4-image"
@@ -105,7 +105,7 @@
         "id": "service-item-5",
         "title": "Event & Field Marketing",
         "titleId": "service-5-title",
-        "description": "Our teams participate in community events and outreach activities designed to increase visibility and public engagement.",
+        "description": "We support events and field activations designed to increase visibility and participation.",
         "descriptionId": "service-5-description",
         "imageUrl": "assets/img5.jpg",
         "imageId": "service-5-image"
@@ -121,7 +121,7 @@
     "items": [
       {
         "id": "testimonial-1",
-        "quote": "Strativo transformed our marketing strategy completely. Their face-to-face approach helped us connect with our donor base in ways we never thought possible.",
+        "quote": "Strativo revamped our outreach strategy; their in-person approach connected us with donors more effectively.",
         "role": "Marketing Director",
         "company": "Hope International",
         "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=500&fit=crop",
@@ -129,7 +129,7 @@
       },
       {
         "id": "testimonial-2",
-        "quote": "Working with Strativo was seamless from start to finish. They quickly understood our needs and delivered a solution that exceeded expectations.",
+        "quote": "Working with Strativo was seamless — they understood our needs and delivered excellent results.",
         "role": "Operations Travel Assistant",
         "company": "Burges Salmon",
         "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=500&fit=crop",
@@ -137,7 +137,7 @@
       },
       {
         "id": "testimonial-3",
-        "quote": "The team at Strativo brought such energy and expertise to our event. Their campaigns resulted in a 40% increase in brand awareness.",
+        "quote": "Strativo brought energy and expertise to our event, delivering a measurable lift in awareness.",
         "role": "Event Manager",
         "company": "Medical Relief Foundation",
         "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=500&fit=crop",
@@ -145,7 +145,7 @@
       },
       {
         "id": "testimonial-4",
-        "quote": "Strativo doesn't just deliver campaigns, they deliver results. Their understanding of the humanitarian sector is unmatched.",
+        "quote": "Strativo delivers measurable outcomes and deep sector knowledge.",
         "role": "Communications Lead",
         "company": "Global Health Alliance",
         "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=500&fit=crop",
@@ -153,7 +153,7 @@
       },
       {
         "id": "testimonial-5",
-        "quote": "Professional, creative, and results-driven. Strativo is the best agency we've worked with in the non-profit space.",
+        "quote": "Professional, creative and results-driven — Strativo is a trusted partner for nonprofits.",
         "role": "Executive Director",
         "company": "Community Care Initiative",
         "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=500&fit=crop",
@@ -165,7 +165,7 @@
     "id": "careers-section",
     "title": "Join Our Team",
     "titleId": "careers-title",
-    "description": "ClearPaths Marketing is currently seeking motivated individuals to join our outreach and engagement team. This is a full-time, in-person opportunity combining office training with field outreach activities.",
+    "description": "Strativo is currently seeking motivated individuals to join our outreach and engagement team. This full-time, in-person role blends office training with field outreach activities.",
     "descriptionId": "careers-description",
     "dayInRole": "Team members begin their day with training sessions, team meetings, and preparation before participating in community outreach campaigns where they engage directly with members of the public.",
     "responsibilities": [
@@ -177,7 +177,7 @@
       "Work toward individual and team performance goals"
     ],
     "schedule": "Monday to Friday, 12:30 PM – 8:30 PM | Combination of office and field work",
-    "compensation": "Daily base support when working, plus performance-based commissions. Earnings grow as you gain experience with ClearPaths Marketing.",
+    "compensation": "Daily base support when working, plus performance-based commissions. Earnings grow as you gain experience with Strativo.",
     "salaryBands": [
       {
         "id": "band-new",
@@ -212,7 +212,7 @@
     "id": "community-section",
     "title": "Creating Meaningful Impact",
     "titleId": "community-title",
-    "engagement": "At ClearPaths Marketing, our work goes beyond marketing — it’s about connecting people with causes that matter. Through face-to-face outreach, our teams help raise awareness and support for humanitarian and nonprofit initiatives that focus on improving lives and strengthening communities. Every conversation contributes to greater awareness and involvement within local communities.",
+    "engagement": "At Strativo our work goes beyond marketing — we connect people with causes through in-person outreach, helping raise awareness and support for nonprofit and humanitarian initiatives.",
     "commitment": "We are committed to ethical outreach practices, respectful communication, and representing our partner organizations with professionalism and integrity."
   },
   "contact": {
@@ -229,7 +229,7 @@
       "locations": ["Toronto", "Mississauga", "Brampton", "Etobicoke"]
     },
     "cta": {
-      "title": "Ready to start your career with ClearPaths Marketing?",
+      "title": "Ready to start your career with Strativo?",
       "description": "Apply today and a member of our recruitment team will contact shortlisted candidates."
     },
     "locations": [
